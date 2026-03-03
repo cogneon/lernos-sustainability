@@ -1,4 +1,4 @@
-site_name: lernOS Template Leitfaden
+site_name: lernOS Nachhaltigkeit Leitfaden
 site_url: https://cogneon.github.io/
 docs_dir: src
 site_dir: ../docs/de
@@ -6,15 +6,28 @@ site_dir: ../docs/de
 nav:
     - Willkommen: index.md
     - Grundlagen:
-      - Überblick: 1-1-Grundidee.md
-      - Lebenszyklus: 1-2-Lebenszyklus.md
-      - Inhaltsverzeichnis: 1-3-Inhaltsverzeichnis.md
-      - Inhalt und Schreibstil: 1-4-Inhalt-Schreibstil.md
-      - Markdown Syntax: 1-5-Markdown-Syntax.md
-      - Produktionskette: 1-6-Produktionskette.md
-      - GitHub: 1-7-Github.md
-    - Lernpfad: 2-0-Lernpfad.md
-    - Anhang: 3-0-Anhang.md
+      - Übersicht: 1-00-basics.md
+      - Begriffe: 1-01-terms.md
+      - Warum es genau jetzt wichtig ist zu handeln: 1-02-why.md
+      - Was wir jetzt durch unser Handeln erreichen können: 1-03-what.md
+      - Unser Handeln: 1-04-our-action.md
+      - Kommunikation über das Klima: 1-05-communication.md
+    - Lernpfad:
+      - Übersicht: 2-00-learning-path.md
+      - Kata 0 - Unsere Reise: 2-01-kata-00.md
+      - Kata 1 - Reflektiere deine Gedanken- und Gefühlswelt: 2-02-kata-01.md
+      - Kata 2 - Emotion und Wirksamkeit: 2-03-kata-02.md
+      - Kata 3 - Bleibe informiert: 2-04-kata-03.md
+      - Kata 4 - Wie kann ich als Einzelperson ins Tun kommen?: 2-05-kata-04.md
+      - Kata 5 - Gewohnheiten - im Alltag aktiv werden: 2-06-kata-05.md
+      - Kata 6 - Mein Handabdruck: 2-07-kata-06.md
+      - Kata 7 - Mein Netzwerk - Wie gewinne ich Unterstützung?: 2-08-kata-07.md
+      - Kata 8 - Inner Development Goals - Wie setze ich meine Fähigkeiten für die Gemeinschaft ein?: 2-09-kata-08.md
+      - Kata 9 -  Mein Thema/Challenge nach vorne bringen: 2-10-kata-09.md
+      - Kata 10 - Kommuniziere über dein Thema/deine Challenge: 2-11-kata-10.md
+      - Kata 11 - Lass dich von der Natur inspirieren: 2-12-kata-11.md
+      - Kata 12 - Meine Vision - Abschluss und Ausblick: 2-13-kata-12.md
+    - Anhang: 3-00-appendix.md
     - Download:
       - PDF-Version: https://github.com/cogneon/lernos-template/blob/master/de/build/lernos-template-guide.pdf
       - Word-Version: https://github.com/cogneon/lernos-template/blob/master/de/build/lernos-template-guide.docx
@@ -24,7 +37,6 @@ nav:
     - Links:
       - lernos.org: https://lernos.org
       - CONNECT Community: https://community.cogneon.de
-      - Peerfinder: https://web.peerfinder.app
 
 theme:
     name: 'material'
@@ -42,8 +54,8 @@ extra_css:
 extra_javascript:
   - javascripts/matomo.js
 
-repo_name: 'cogneon/lernos-template'
-repo_url: 'https://github.com/cogneon/lernos-template'
+repo_name: 'cogneon/lernos-sustainability'
+repo_url: 'https://github.com/cogneon/lernos-sustainability'
 
 extra:
     social:
