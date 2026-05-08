@@ -79,8 +79,7 @@ anfassen. Das kann kein Mensch alleine leisten. Dieser Lernzirkel wird
 dich dabei begleiten, für dich den richtigen Weg zu finden - zu einer
 größeren Wirksamkeit mit Freude.
 
-![](./media/image10.png){width="5.594488188976378in"
-height="2.1666666666666665in"}
+[](./media/Hebel der Wirksamkeit.png)
 
 Wir starten mit einem Fokus auf die Wirksamkeit als Einzelperson in
 Woche 4.
