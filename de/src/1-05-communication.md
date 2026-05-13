@@ -15,7 +15,7 @@ Gute Klimakommunikation kann:
 
 - Verbindungen zu anderen Menschen, Gruppen, Organisationen schaffen
 
-- Dringlichkeit zum Handeln verdeutlichen
+- Dringlichkeit zum Handeln verdeutlichen (TEST TEST WEG MACHEN)
 
 - Bewusstsein für lokale Auswirkungen öffnen
 
