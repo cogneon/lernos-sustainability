@@ -1,0 +1,2587 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de-de" xml:lang="de-de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Antje Holst, …" />
+  <title>lernOS Nachhaltigkeit Leitfaden</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      white-space: pre-wrap;
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">lernOS Nachhaltigkeit Leitfaden</h1>
+<p class="subtitle">Aktiv für eine nachhaltige Zukunft</p>
+<p class="author">Antje Holst, …</p>
+<p class="date">Version 0.1 (dd.mm.2026)</p>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#willkommen" id="toc-willkommen"><span
+class="toc-section-number">1</span> Willkommen</a></li>
+<li><a href="#grundlagen" id="toc-grundlagen"><span
+class="toc-section-number">2</span> Grundlagen</a>
+<ul>
+<li><a href="#begriffsklärung" id="toc-begriffsklärung"><span
+class="toc-section-number">2.1</span> Begriffsklärung</a></li>
+<li><a href="#warum-es-genau-jetzt-wichtig-ist-zu-handeln"
+id="toc-warum-es-genau-jetzt-wichtig-ist-zu-handeln"><span
+class="toc-section-number">2.2</span> Warum es genau jetzt wichtig ist
+zu handeln</a></li>
+<li><a href="#was-wir-jetzt-durch-unser-handeln-erreichen-können"
+id="toc-was-wir-jetzt-durch-unser-handeln-erreichen-können"><span
+class="toc-section-number">2.3</span> Was wir jetzt durch unser Handeln
+erreichen können</a></li>
+<li><a href="#unser-handeln" id="toc-unser-handeln"><span
+class="toc-section-number">2.4</span> Unser Handeln</a></li>
+<li><a href="#kommunikation-über-das-klima"
+id="toc-kommunikation-über-das-klima"><span
+class="toc-section-number">2.5</span> Kommunikation über das
+Klima</a></li>
+</ul></li>
+<li><a href="#lernpfad" id="toc-lernpfad"><span
+class="toc-section-number">3</span> Lernpfad</a>
+<ul>
+<li><a href="#kata-0-unsere-reise" id="toc-kata-0-unsere-reise"><span
+class="toc-section-number">3.1</span> Kata 0: Unsere Reise</a>
+<ul>
+<li><a href="#arbeitsblatt-climate-action-canvas"
+id="toc-arbeitsblatt-climate-action-canvas"><span
+class="toc-section-number">3.1.1</span> Arbeitsblatt: Climate Action
+Canvas</a></li>
+</ul></li>
+<li><a href="#kata-1-reflektiere-deine-gedanken--und-gefühlswelt"
+id="toc-kata-1-reflektiere-deine-gedanken--und-gefühlswelt"><span
+class="toc-section-number">3.2</span> Kata 1: Reflektiere deine
+Gedanken- und Gefühlswelt</a>
+<ul>
+<li><a
+href="#arbeitsblatt---meine-selbsteinschätzung-zur-nachhaltigkeit"
+id="toc-arbeitsblatt---meine-selbsteinschätzung-zur-nachhaltigkeit"><span
+class="toc-section-number">3.2.1</span> Arbeitsblatt - Meine
+Selbsteinschätzung zur Nachhaltigkeit</a></li>
+<li><a href="#section" id="toc-section"><span
+class="toc-section-number">3.2.2</span> <img src="./media/image16.png"
+style="width:8.39236in;height:5.92692in" /></a></li>
+</ul></li>
+<li><a href="#kata-2-emotion-und-wirksamkeit"
+id="toc-kata-2-emotion-und-wirksamkeit"><span
+class="toc-section-number">3.3</span> Kata 2: Emotion und
+Wirksamkeit</a></li>
+<li><a href="#kata-3-bleibe-informiert"
+id="toc-kata-3-bleibe-informiert"><span
+class="toc-section-number">3.4</span> Kata 3: Bleibe informiert</a></li>
+<li><a href="#kata-4-wie-kann-ich-als-einzelperson-ins-tun-kommen"
+id="toc-kata-4-wie-kann-ich-als-einzelperson-ins-tun-kommen"><span
+class="toc-section-number">3.5</span> Kata 4: Wie kann ich als
+Einzelperson ins Tun kommen?</a></li>
+<li><a href="#kata-5-gewohnheiten---im-alltag-aktiv-werden"
+id="toc-kata-5-gewohnheiten---im-alltag-aktiv-werden"><span
+class="toc-section-number">3.6</span> Kata 5: Gewohnheiten - im Alltag
+aktiv werden</a></li>
+<li><a href="#kata-6-mein-handabdruck"
+id="toc-kata-6-mein-handabdruck"><span
+class="toc-section-number">3.7</span> Kata 6: Mein Handabdruck</a></li>
+<li><a href="#kata-7-mein-netzwerk---wie-gewinne-ich-unterstützung"
+id="toc-kata-7-mein-netzwerk---wie-gewinne-ich-unterstützung"><span
+class="toc-section-number">3.8</span> Kata 7: Mein Netzwerk - Wie
+gewinne ich Unterstützung?</a></li>
+<li><a
+href="#kata-8-inner-development-goals---wie-setze-ich-meine-fähigkeiten-für-die-gemeinschaft-ein"
+id="toc-kata-8-inner-development-goals---wie-setze-ich-meine-fähigkeiten-für-die-gemeinschaft-ein"><span
+class="toc-section-number">3.9</span> Kata 8: Inner Development Goals -
+Wie setze ich meine Fähigkeiten für die Gemeinschaft ein?</a>
+<ul>
+<li><a href="#section-1" id="toc-section-1"><span
+class="toc-section-number">3.9.1</span> </a></li>
+</ul></li>
+<li><a href="#kata-9-mein-thema-challenge-nach-vorne-bringen"
+id="toc-kata-9-mein-thema-challenge-nach-vorne-bringen"><span
+class="toc-section-number">3.10</span> Kata 9: Mein Thema/ Challenge
+nach vorne bringen</a></li>
+<li><a href="#kata-10-kommuniziere-über-dein-themadeine-challenge"
+id="toc-kata-10-kommuniziere-über-dein-themadeine-challenge"><span
+class="toc-section-number">3.11</span> Kata 10: Kommuniziere über dein
+Thema/deine Challenge</a></li>
+<li><a href="#kata-11-lass-dich-von-der-natur-inspirieren"
+id="toc-kata-11-lass-dich-von-der-natur-inspirieren"><span
+class="toc-section-number">3.12</span> Kata 11: Lass dich von der Natur
+inspirieren</a></li>
+<li><a href="#kata-12-meine-vision---abschluss-und-ausblick"
+id="toc-kata-12-meine-vision---abschluss-und-ausblick"><span
+class="toc-section-number">3.13</span> Kata 12: Meine Vision - Abschluss
+und Ausblick</a></li>
+<li><a href="#anhang-literaturliste"
+id="toc-anhang-literaturliste"><span
+class="toc-section-number">3.14</span> Anhang: Literaturliste</a></li>
+<li><a href="#danksagungen" id="toc-danksagungen"><span
+class="toc-section-number">3.15</span> Danksagungen</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 data-number="1" id="willkommen"><span
+class="header-section-number">1</span> Willkommen</h1>
+<p>"Die durch den Treibhauseffekt hervorgerufene Erderwärmung gilt als
+größte Herausforderung für die Menschheit." (Deutsche Welle
+03.05.22)</p>
+<p>Der Klimawandel erfordert gemeinsames Handeln. Viele Menschen möchten
+aktiv werden, wissen aber nicht wie. Unser zwölfwöchiger Leitfaden
+bietet euch praktische Übungen und konkrete Schritte für mehr
+Nachhaltigkeit im Alltag. Er hilft euch, euer Leben klimafreundlicher zu
+gestalten und euren persönlichen Hebel zu finden, euch für eine
+nachhaltige Zukunft einzusetzen - ganz nach euren individuellen
+Möglichkeiten und ohne erhobenen Zeigefinger.</p>
+<p>Stell dir vor, was wäre, wenn wir alle diese Schritte gingen. Stell
+dir vor, was wir gemeinsam erreichen können!</p>
+<p>Das ist unsere Vision - das wollen wir umsetzen!</p>
+<p><strong>Wie man mit diesem Leitfaden arbeitet:</strong></p>
+<ul>
+<li><p>Es gibt ein recht langes Grundlagenkapitel, das man am Anfang
+lesen kann. Nicht alle Hintergrundinformationen sind für die Bearbeitung
+des Lernpfades dringend notwendig.</p></li>
+<li><p>Oder man arbeitet sich direkt durch die “Wochen” hindurch. Die
+Idee ist, dass man sich jede Woche mit einer Gruppe Gleichgesinnter
+trifft, um die Inhalte einer Woche zu besprechen. Idealerweise haben
+sich alle auf die Inhalte vorbereitet, zum Beispiel die relevanten Teile
+des Grundlagenkapitels gelesen.</p></li>
+<li><p>In den Wochen gibt es “Katas”, das sind Aufgaben oder Übungen.
+lernOS benutzt das Wort Kata, in Anlehnung an den Kampfsport.</p></li>
+</ul>
+<p>lernOS Leitfäden stehen unter der Lizenz <a
+href="https://creativecommons.org/licenses/by/4.0/deed.de">Creative
+Commons Namensnennung 4.0 International</a> (CC BY 4.0), du darfst sie
+teilen und bearbeiten, wenn du die Quelle nennst und keine weiteren
+Einschränkungen hinzufügst.</p>
+<p><img src="./media/image1.png"
+style="width:0.91667in;height:0.32292in" /></p>
+<h1 data-number="2" id="grundlagen"><span
+class="header-section-number">2</span> Grundlagen</h1>
+<p>“Wir haben kein Umweltproblem, sondern wir haben ein
+Gesellschaftsproblem, dass wir uns mit den Naturgesetzen nicht so
+auseinandergesetzt haben, dass wir unsere Art zu wirtschaften mit ihnen
+in Einklang bringen.” — <a
+href="https://www.deutschlandfunk.de/es-koennte-so-schoen-sein-wenn-gemeinwohl-wirklich-wichtig-waere-maja-goepel-dlf-ffc89f28-100.html">Maja
+Göpel</a></p>
+<p>Unser Thema ist komplex. Deshalb ist es besonders wichtig zu wissen,
+was genau gemeint ist. Daher möchten wir dir einige Begriffserklärungen,
+Hintergrundinformationen und Links mit auf deine Lernreise geben.</p>
+<p>Einen Überblick gibt der Erdsystemforscher Prof. Schellnhuber in
+diesem halbstündigen <a
+href="https://youtu.be/aKQz6MY_Euc?si=2il_S3_NZFTQntWb">Vortrag</a> aus
+dem Juli 2024. Biomasse und Artenvielfalt, die von Menschen verursachten
+Energie- und Materialströme und die gravierenden Veränderungen im
+Klimasystem wirken zusammen. Die Hebel und Verantwortlichkeiten für das
+gemeinsame Überleben der Menschheit werden sichtbar.</p>
+<h2 data-number="2.1" id="begriffsklärung"><span
+class="header-section-number">2.1</span> Begriffsklärung</h2>
+<p>Was genau bedeuten die Begriffe “Klimawandel”, “Klimaschutz” und
+“Klimaanpassung”? Wir geben dir dazu jeweils eine kurze Definition. Wenn
+du dich tiefer mit diesen Themen beschäftigen möchtest, findest du die
+entsprechenden Links im Text.</p>
+<p><strong>Klimawandel</strong></p>
+<p>Die Veränderung der Wetterbedingungen über einen längeren Zeitraum
+nennen wir “Klimawandel”. Einerseits ist das Erdklima ständigen
+Veränderungen unterworfen, andererseits belegen weltweite Messungen,
+dass etwa seit Beginn der Industrialisierung (ca. 1850) der Mensch
+erheblich zur Erwärmung der Erdatmosphäre beiträgt. Das führt dazu, dass
+drastisch beschleunigte Klimaveränderungen erzeugt werden, wie du an der
+Grafik unten erkennen kannst.</p>
+<p>(Quelle: <a
+href="https://www.bpb.de/kurz-knapp/lexika/politiklexikon/296401/klimawandel/"><u>https://www.bpb.de/kurz-knapp/lexika/politiklexikon/296401/klimawandel/</u></a>)</p>
+<p>Unter folgendem Link findest du das Thema auch noch in einer
+Multimedia-Darstellung sehr gut erklärt: <a
+href="https://ufz.pageflow.io/co2-budget#304846"><u>https://ufz.pageflow.io/co2-budget#304846</u></a></p>
+<p><img src="./media/image2.png"
+style="width:5.59449in;height:3.13889in" /> Abweichungen der
+Jahrestemperaturen für Deutschland 1881-2022 vom vieljährigen
+Temperaturmittel 1961-1990, Quelle: <a
+href="https://www.dwd.de/DE/klimaumwelt/aktuelle_meldungen/230123/artikel_jahresrueckblick-2022.html"><u>Deutscher
+Wetterdienst 2023</u></a></p>
+<blockquote>
+<p>Quelle: <a href="http://www.dwd.de/"><mark><u>Deutscher Wetterdienst
+(DWD) 20</u></mark></a>24</p>
+</blockquote>
+<p>Die Grafik zeigt die Veränderung in der Durchschnittstemperatur in
+rund 140 Jahren und damit ein wichtiges Merkmal des Klimawandels. Die
+auffällige Temperaturerhöhung wird maßgeblich durch menschengemachte
+Treibhausgasemissionen verursacht. Damit sind Gase, wie Kohlendioxid und
+Methan gemeint, die hauptsächlich durch die Verbrennung von fossilen
+Brennstoffen und die Abholzung von Wäldern entstehen. Ihr Anstieg in der
+Atmosphäre verstärkt den Treibhauseffekt und führt zur globalen
+Erwärmung.</p>
+<p><img src="./media/image3.png"
+style="width:6.26772in;height:5.91667in" /></p>
+<p>Die größten Treibhausgasemittenten in Deutschland sind die
+Energiewirtschaft, der Verkehrssektor und die Industrie. Im Jahr 2022
+war die Energiewirtschaft für 256 Millionen Tonnen CO2-Äquivalente
+Treibhausgasemissionen verantwortlich. Der Verkehrssektor ist der
+drittgrößte Verursacher von Treibhausgasemissionen in Deutschland, wobei
+rund 96 Prozent der Emissionen im Straßenverkehr verursacht werden. Die
+Industrie, insbesondere die Chemieindustrie und die Produktion
+mineralischer Produkte wie Zement, trägt ebenfalls erheblich zu den
+Treibhausgasemissionen bei.</p>
+<p>:<img src="./media/image4.png"
+style="width:4.66531in;height:3.50116in" /></p>
+<p><strong>Klimaschutz</strong></p>
+<p>Wir wissen jetzt also, wodurch die Erderwärmung vorangetrieben wird.
+Der nächste Schritt heißt: Wie sehen dann die Maßnahmen aus, um die
+Reduktion von Treibhausgasen zu erreichen, also
+<strong>Klimaschutz?</strong></p>
+<p>Weil sowohl das Klima als auch die Wirtschaft sehr komplex und von
+einer Vielzahl von Faktoren beeinflusst werden, ist auch Klimaschutz
+vielfältig und komplex. Nehmen wir den Verkehrssektor als Beispiel: Es
+werden ordnungsrechtliche (Verkehrsrecht), ökonomische
+(Subventionen/CO<sub>²</sub>-Preis) und infrastrukturelle (Bahn und
+OPNV) Instrumente genutzt. Die folgende Grafik zeigt dafür
+Rahmenbedingungen und Bausteine am Beispiel des Verkehrssektors:</p>
+<p><a
+href="https://www.umweltbundesamt.de/themen/verkehr/klimaschutz-im-verkehr#bausteine"><img
+src="./media/image5.png"
+style="width:5.59449in;height:3.06944in" /></a></p>
+<p><a
+href="https://www.umweltbundesamt.de/themen/verkehr/klimaschutz-im-verkehr#bausteine"><u>https://www.umweltbundesamt.de/themen/verkehr/klimaschutz-im-verkehr#bausteine</u></a></p>
+<p><strong>Klimaanpassung</strong></p>
+<p>Heute ist leider schon klar: Wir können bestimmte Folgen des
+Klimawandels, wie z.B. die Zunahme von Extremwetterereignissen, mit
+Klimaschutzmaßnahmen nicht mehr verhindern. Die Hände jetzt in den Schoß
+zu legen, ist aber auch nicht die Lösung. Die nachfolgende Grafik zeigt
+Maßnahmen, um die heute schon unvermeidbaren Folgen des Klimawandels zu
+bewältigen, also <strong>Klimaanpassung!</strong></p>
+<p><img src="./media/image6.jpg"
+style="width:6.94271in;height:3.49332in" /></p>
+<p><a
+href="https://www.bmuv.de/themen/klimaschutz-anpassung/klimaanpassung/worum-geht-es"><u>https://www.bmuv.de/themen/klimaschutz-anpassung/klimaanpassung/worum-geht-es</u></a></p>
+<p>Zusammengefasst:</p>
+<ul>
+<li><p><strong>Klimawandel</strong> ist die Veränderung des Klimas, also
+der durchschnittlichen Wetterbedingungen über einen längeren
+Zeitraum</p></li>
+<li><p><strong>Klimaschutz</strong> bezeichnet die Rücknahme oder
+Reduzierung bereits existierender wirtschaftlicher und privater
+Handlungs- und Verhaltensweisen, die den Klimawandel verstärkt
+haben.</p></li>
+<li><p><strong>Klimaanpassung</strong> sind Maßnahmen, die die
+Widerstandsfähigkeit von Gesellschaften und Ökosystemen gegenüber den
+Auswirkungen des Klimawandels stärken sollen.</p></li>
+</ul>
+<p><strong>Nachhaltigkeit und nachhaltige Entwicklung</strong></p>
+<p>“Nachhaltige Entwicklung ist eine Entwicklung, die den Bedürfnissen
+der heutigen Generation entspricht, ohne die Möglichkeiten künftiger
+Generationen zu gefährden, ihre eigenen Bedürfnisse zu befriedigen.”</p>
+<p>Dieses Verständnis von Nachhaltigkeit wurde 1987 im Bericht der
+Weltkommission für Umwelt und Entwicklung der Vereinten Nationen
+veröffentlicht. (Brundtland-Bericht)</p>
+<blockquote>
+<p><a
+href="https://www.lag21.de/portal-nachhaltigkeit/nachhaltige-entwicklung/"><u>https://www.lag21.de/portal-nachhaltigkeit/nachhaltige-entwicklung/</u></a></p>
+</blockquote>
+<p>“Nachhaltigkeit” und “Nachhaltige Entwicklung” haben die gleiche
+Bedeutung und beziehen sich auf ökologische Tragfähigkeit, soziale
+Gerechtigkeit und wirtschaftliche Stabilität. Dazu einen Beitrag zu
+leisten, auch mit diesem Leitfaden, ist für uns Motivation und
+Vision.</p>
+<p><strong>Biodiversität</strong></p>
+<p>Biodiversität sorgt für die Resilienz von Ökosystemen gegenüber
+Störungen wie Klimawandel und Umweltverschmutzung, indem sie eine
+Vielfalt an Reaktionen auf solche Stressoren ermöglicht. Biodiversität
+ist aktuell durch mehrere Faktoren gefährdet, darunter Habitatverlust,
+Klimawandel, Umweltverschmutzung, invasive Arten und Übernutzung
+natürlicher Ressourcen. Der Verlust von Lebensräumen, oft durch
+Landwirtschaft, Urbanisierung und Infrastrukturentwicklung, zerstört die
+natürlichen Umgebungen, die für viele Arten lebenswichtig sind.</p>
+<h2 data-number="2.2"
+id="warum-es-genau-jetzt-wichtig-ist-zu-handeln"><span
+class="header-section-number">2.2</span> Warum es genau jetzt wichtig
+ist zu handeln</h2>
+<p><strong>Planetare Grenzen sind die relevanten ökologischen
+Belastungsgrenzen</strong></p>
+<p>Die Entstehung menschlicher Zivilisation ist erst mit einer
+Stabilisierung des Klimas eingetreten (Röckström et al., 2009). Die
+Veränderung der Rahmenbedingungen dafür, wie sie durch den Klimawandel
+passiert, verändert unsere Lebensbedingungen für heute und die Zukunft.
+Dabei können große und kleine Systeme im Blick sein. Ein großes System
+sind z.B. die Strömungen des Ozeans. Ein kleines ist eine
+Waldlichtung.</p>
+<p>Die planetaren Grenzen beschreiben die gewachsenen Systemgrenzen in
+den Teilen des Planeten, in denen Leben existiert und der Systeme, die
+dieses Leben auf dem bisherigen Niveau aufrechterhalten. Die Einhaltung
+der Systemgrenzen auf unserer Erde und gute Lebensbedingungen hängen
+voneinander ab.</p>
+<p>Klimawissenschaftler gehen von neun Teilbereichen der menschlichen
+Zivilisation aus, die eingehalten werden müssen, damit die
+Lebensgrundlagen der Menschheit erhalten bleiben. In einer am 13.
+September 2023 veröffentlichten Studie wurden die Ergebnisse eines
+Gesundheitschecks für die Stabilität der großen Systeme unseres
+Planeten, bei dem “nicht nur der Blutdruck gemessen wird, sondern auch
+die Blutwerte genommen, ein EKG geschrieben und eine
+Ultraschalluntersuchung aller Organe vorgenommen wird.” Im Ergebnis sind
+Stand Herbst 2023 sechs der neun planetaren Grenzen überschritten. (<a
+href="https://www.deutschlandfunk.de/studie-planetare-grenzen-ueberschritten-lebensgrundlage-mensch-100.html"><u>Quelle</u></a>).
+Siehe auch das Video mit Stefan Rahmstorf: <a
+href="https://youtu.be/W9Bd03YVVnA?si=AZAAZQDCwZVB-c2x"
+class="uri">https://youtu.be/W9Bd03YVVnA?si=AZAAZQDCwZVB-c2x</a></p>
+<p><img src="./media/image7.png"
+style="width:5.59449in;height:2.44444in" /></p>
+<p>Abbildung: Azote for Stockholm Resilience Centre, based on analysis
+in Richardson et al 2023</p>
+<p><strong>Ökologische Kipppunkte</strong></p>
+<p>"Die Stabilität und der Wohlstand der Nationen und unserer
+Zivilisation hängen von der Stabilität der kritischen Funktionen des
+Erdsystems ab, die über die nationalen Grenzen hinaus wirken.
+Gleichzeitig stößt der Mensch durch seine Aktivitäten immer stärker an
+die planetaren Grenzen dieser zentralen Systeme. Vom Amazonas-Regenwald
+bis zu den Eismassen Grönlands steigt die Gefahr, dass irreversible und
+unkontrollierbare Veränderungen in der Funktionsweise des Erdsystems
+ausgelöst werden. Da diese Verschiebungen Menschen auf der ganzen Welt
+betreffen, argumentieren wir, dass Kippelemente als planetare
+Gemeingüter betrachtet werden sollten, die der Welt anvertraut sind und
+daher einer kollektiven Steuerung bedürfen", erklärt Johan Rockström,
+Direktor des Potsdam-Instituts für Klimafolgenforschung (PIK) und
+Professor für Nachhaltigkeitswissenschaften am Zentrum. (Quelle: <a
+href="https://www.stockholmresilience.org/research/research-news/2024-01-23-planetary-commons-fostering-global-cooperation-to-safeguard-critical-earth-system-functions.html?utm_source=Earth4All&amp;utm_campaign=c502a609f0-EMAIL_CAMPAIGN_2023_04_09_23_COPY_01&amp;utm_medium=email&amp;utm_term=0_-66b60eb25d-%5BLIST_EMAIL_ID%5D"><u>Stockholm
+Resilience Center 2024</u></a>)</p>
+<p><strong>Overshoot-Day - Überlastung des Erdsystems</strong></p>
+<p>Der globale Erdüberlastungstag ist der Tag im Jahr, bis zu dem wir
+alle natürlichen Ressourcen verbraucht haben, die die Erde in einem Jahr
+regenerieren kann. Das bedeutet, dass wir danach mehr verbrauchen, als
+die Erde erneuern kann.</p>
+<p><img src="./media/image8.jpg"
+style="width:5.59449in;height:4.33333in" /></p>
+<p>Wie viele Ressourcen Deutschland anteilig an den globalen Ressourcen
+verbraucht, zeigt der deutsche Erdüberlastungstag. Er lag 2023 auf dem
+4. Mai. 2024 erneut 2 Tage früher, am 2. Mai.</p>
+<h2 data-number="2.3"
+id="was-wir-jetzt-durch-unser-handeln-erreichen-können"><span
+class="header-section-number">2.3</span> Was wir jetzt durch unser
+Handeln erreichen können</h2>
+<p>Welche Perspektiven haben wir?</p>
+<p>Der Club of Rome beschreibt in seinem Report “Earth for All: Ein
+Survivalguide für unseren Planeten” zwei wesentliche
+Entwicklungsmöglichkeiten:</p>
+<ol type="1">
+<li><p>Too Little Too Late (zu wenig, zu spät) und</p></li>
+<li><p>Giant Leap (Riesensprung)</p></li>
+</ol>
+<p><strong>Perspektive 1: Nichts Wesentliches ändern - zu wenig, zu
+spät</strong></p>
+<p>Was passiert, wenn das Wirtschaftssystem, das die Welt und die
+Biosphäre beherrscht, im Wesentlichen so weiterläuft wie in den letzten
+fünfzig Jahren?</p>
+<ul>
+<li><p>Es gibt immer mehr extreme Hitzewellen, Dürre und Ernteausfälle,
+die große Bevölkerungsgruppen betreffen. Die sozialen Spannungen werden
+aufgrund der Ungleichheit zwischen und innerhalb der Länder zunehmen.
+Gesellschaften werden dadurch instabiler, Konflikte nehmen zu</p></li>
+<li><p>Wenn die Energiewende die Armen relativ stärker belastet als die
+Reichen, wird sie Konflikte in den Gesellschaften hochkochen
+lassen.</p></li>
+</ul>
+<p><strong>Perspektive 2: Umbau durch außerordentliche Bemühungen -
+Giant Leap</strong></p>
+<p>Fünf bis 2050 erreichbare grundsätzliche und weitreichende
+Veränderungen sind für ein globales Gleichgewicht nötig. Sie würden
+bisher eingespielte Prozesse und Zusammenhänge ablösen:</p>
+<ol type="1">
+<li><p>Beendigung extremer Armut</p></li>
+<li><p>Beseitigung der eklatanten Ungleichheit</p></li>
+<li><p>Ermächtigung (Empowerment) der Frauen</p></li>
+<li><p>Aufbau eines für Menschen und Ökosysteme gesunden
+Nahrungsmittelsystems</p></li>
+<li><p>Übergang zum Einsatz sauberer Energie</p></li>
+</ol>
+<p>Für den Umbau wären 2 bis 4 Prozent des globalen
+Bruttoinlandsprodukts pro Jahr notwendig. Dafür brauchen wir eine
+Umgestaltung der Märkte und langfristiges Denken. Soziale
+Sicherungsnetze müssen geschaffen werden, um alle Mitglieder der
+Gesellschaft zu schützen.</p>
+<p>“Die Umverteilung des Wohlstands ist nicht verhandelbar. Langfristige
+wirtschaftliche Ungleichheit in Verbindung mit kurzfristigen
+Wirtschaftskrisen (der derzeitige Modus Operandi der meisten großen
+Volkswirtschaften) trägt zu wirtschaftlicher Angst, Misstrauen und
+politischer Dysfunktion bei. Dies sind entscheidende Faktoren, die in
+demokratischen Gesellschaften das Risiko einer zerstörerischen
+Polarisierung und in deren Folge wachsende soziale Spannungen
+bergen.”</p>
+<p>Es ist sicherzustellen, dass die reichsten 10% der Menschheit nicht
+mehr als 40% des Nationaleinkommens bekommen.</p>
+<p>- Club Of Rome. Earth for All: Ein Survivalguide für unseren
+Planeten. Der neue Bericht an den Club of Rome, 50 Jahre nach »Die
+Grenzen des Wachstums« (S.16). oekom verlag. Kindle-Version.</p>
+<h2 data-number="2.4" id="unser-handeln"><span
+class="header-section-number">2.4</span> Unser Handeln</h2>
+<p><strong>Das globale Veränderungsprojekt: die Sustainable Development
+Goals (SDGs)</strong></p>
+<p>Die für nachhaltige Entwicklung notwendige gesellschaftliche
+Veränderung ist nur gemeinschaftlich und global erreichbar. Deshalb
+haben sich 2015 193 Staaten getroffen, um eine gemeinsame Zielsetzung zu
+erarbeiten. 17 Ziele für nachhaltige Entwicklung (SDGs) sind entstanden.
+Alle beteiligten Staaten haben sich verpflichtet, diese Ziele in
+nationale Entwicklungspläne zu überführen und umzusetzen.</p>
+<p><mark>Dieser globale Plan zur Förderung nachhaltigen Friedens und
+Wohlstands und zum Schutz unseres Planeten legt besonderen Wert darauf,
+die Bedürfnisse und Prioritäten der schwächsten Bevölkerungsgruppen und
+Länder zu berücksichtigen. Nur wenn niemand zurückgelassen wird, können
+die 17 Ziele bis 2030 erreicht werden.</mark></p>
+<p><mark>Die Ziele mit ihren Unterzielen und Projekten sind <a
+href="https://17ziele.de/"><u>hier</u></a> detaillierter
+dargestellt.</mark></p>
+<p><img src="./media/image9.png"
+style="width:6.26772in;height:3.23611in" /></p>
+<p>Was im Großen auf staatlicher Ebene angedacht ist, kann dir eine
+Orientierungshilfe für dein eigenes Handeln und Wirken sein. Wie kannst
+du in deinem persönlichen Umfeld zur Erreichung dieser 17 Ziele
+beitragen?</p>
+<p><strong>Klimagerechtigkeit</strong></p>
+<p>Wenn wir über den Umgang mit der Klimakrise nachdenken, ist
+Gerechtigkeit ein zentrales Thema. Die ärmere Hälfte der Weltbevölkerung
+hat mit 10% nur eine geringe Verantwortung für die CO2-Emissionen. Die
+reichsten 10% sind für rund 47 % aller Kohlenstoffdioxid-Emissionen
+verantwortlich. Die Gesamtemissionen der reichsten 1% liegen über denen
+der ärmeren 50%.</p>
+<p>Quelle: <a
+href="https://de.statista.com/infografik/26885/anteil-der-einkommensschichten-an-den-globalen-co2-emissionen/"><u>https://de.statista.com/infografik/26885/anteil-der-einkommensschichten-an-den-globalen-co2-emissionen/</u></a></p>
+<p>Hauptursache der weit größeren CO2-Emissionen der Reichen sind die
+größere Wohnfläche, die größeren Autos, aber vor allem das häufige
+Fliegen, besonders in Privatjets. Die ärmeren Länder und die ärmere
+Bevölkerung in den wohlhabenderen Ländern sind stärker von
+Wetterextremen und steigenden Preisen für Nahrungsmittel und Wasser
+bedroht als reiche Menschen. Hitzewellen holen sich in den armen
+Stadtvierteln mehr Tote als in den reichen Vierteln.</p>
+<p>“Lange Trockenzeiten zerstören Ackerflächen. Extreme Wetterereignisse
+wie Wirbelstürme und Überschwemmungen führen zu Ernteeinbußen.
+Hitzewellen wirken sich auf die Gesundheit von Nutztieren aus.
+Landwirt:innen verlieren nicht nur die Möglichkeit, ihre Ernte zu
+verkaufen, sondern auch die Nahrungsquelle für ihre Familien.” Quelle:
+https://www.aktion-deutschland-hilft.de/de/fachthemen/armut/der-klimawandel-und-die-armut/</p>
+<p><strong>Hebel und Wirksamkeit von Aktivität</strong></p>
+<p>Viele von euch werden mit der Erwartung an diesen Leitfaden treten,
+dass es darum geht, was du in deinem Leben ändern kannst, um dich
+nachhaltiger zu verhalten. Das ist auch ein Teil der Lösung.</p>
+<p>Gleichzeitig müssen wir zur Kenntnis nehmen, dass individuelle
+Verhaltensveränderungen nicht ausreichen werden, um innerhalb der
+planetaren Grenzen zu bleiben<a href="#fn1" class="footnote-ref"
+id="fnref1" role="doc-noteref"><sup>1</sup></a>. Ein subjektives Gefühl
+der Wirksamkeit im persönlichen Umfeld ist für viele von uns wichtig
+(siehe auch Klimagefühle in Woche 2) - das Problem ist nur, dass diese
+Wirksamkeit zum Teil eine Illusion ist<a href="#fn2"
+class="footnote-ref" id="fnref2"
+role="doc-noteref"><sup>2</sup></a>.</p>
+<p>In Deutschland kann ein einzelner Mensch auch mit hoher Anstrengung
+die Grenze des CO2-Fußabdrucks nicht unter ca. 5 CO2 Tonnen Emission pro
+Jahr drücken<a href="#fn3" class="footnote-ref" id="fnref3"
+role="doc-noteref"><sup>3</sup></a>. Insofern sind unserer Wirksamkeit
+durch Konsumverhalten, Mobilität und Wohnen Grenzen gesetzt, die weit
+über der einen Tonne CO2 liegen, die notwendig wäre für
+Klimaneutralität.</p>
+<p>Deshalb müssen wir für eine größere Wirksamkeit auch größere Hebel
+anfassen. Das kann kein Mensch alleine leisten. Dieser Lernzirkel wird
+dich dabei begleiten, für dich den richtigen Weg zu finden - zu einer
+größeren Wirksamkeit mit Freude.</p>
+<p><a href="./media/Hebel%20der%20Wirksamkeit.png"></a></p>
+<p>Wir starten mit einem Fokus auf die Wirksamkeit als Einzelperson in
+Woche 4.</p>
+<p>In den Wochen 6 bis 10 machen wir die ersten Schritte zu einer
+kollektiven Wirksamkeit. Hier geht es darum, den eigenen <a
+href="#kix.5t1gse1bbf5h"><u>Handabdruck</u></a> zu vergrößern.</p>
+<p>Indem wir uns mit anderen Menschen zusammentun und zum Beispiel in
+der Firma, der Schule oder der Gemeinde Strukturen anpassen, vergrößern
+wir unsere Wirksamkeit. Denn dann ist es zum Beispiel nicht nur die
+eigene Familie, die weniger Fleisch isst, sondern viele Menschen ändern
+ihre Ernährungsgewohnheiten, wenn zum Beispiel die Qualität des
+vegetarischen Essens in der Kantine steigt.</p>
+<p>Das Schöne ist, dass durch kollektive Aktivitäten auch die
+Ohnmachtsgefühle abnehmen. Häufig bringt es sogar Freude, zusammen mit
+anderen lokal wirksam zu werden.</p>
+<p>Aber auch lokale Projekte haben einen vergleichsweise kleinen Hebel,
+weil unsere gesellschaftlichen Systeme nicht in der Balance sind.</p>
+<p>Beispiel Lebensmittel-System:</p>
+<p>Während die Lebensmittelproduktion mit ein Drittel aller
+Treibhausgasemissionen erheblich zur Klimakrise beiträgt (und außerdem
+70 Prozent des weltweiten Süßwassers verbraucht und den Verlust der
+Biodiversität vorantreibt), ist die Art der Lebensmittelproduktion weit
+davon entfernt das Wohl der Menschheit zu fördern. Über 780 Millionen
+Menschen leiden an Hunger, und fast ein Drittel aller produzierten
+Lebensmittel wird verschwendet, während gleichzeitig fast drei
+Milliarden Menschen sich keine gesunde Ernährung leisten können.<a
+href="#fn4" class="footnote-ref" id="fnref4"
+role="doc-noteref"><sup>4</sup></a></p>
+<p>Beispiel Recycling-System:</p>
+<p>99% des Plastiks werden aus fossilen Rohstoffen hergestellt. Deswegen
+recycelt ein hoher Prozentsatz der deutschen Plastikverpackungen im
+Gelben Sack. Aber nur 20% des Plastiks aus dem Gelben Sack wird wieder
+zu neuen Produkten recycelt. Quelle: Podcast NDR Info “Plastik-Recyling
+- mehr rausholen aus dem Gelben Sack”</p>
+<p>Jetzt kannst du dich fragen, was du dazu machen kannst, um auf
+gesellschaftliche Systeme einzuwirken? Auch hierzu wirst du für dich in
+diesem Lernzirkel nächste Schritte entdecken. <mark>Denn es reicht, wenn
+schon ein relativ kleiner Teil der Bevölkerung aktiv wird: Erica
+Chenoweth, Po­li­tik­wis­sen­schaft­le­r:in aus den USA, forscht zu
+gewaltfreiem Widerstand und hat Protestbewegungen gegen Regime aus den
+letzten 100 Jahren untersucht. Chenoweths Forschungsergebnisse sind
+ermutigend und zeigen,</mark> dass Bewegungen erfolgreich sind, wenn nur
+3,5 Prozent der Bevölkerung ihre Einstellung/Verhalten ändern.</p>
+<p>Alleine ist unsere Wirksamkeit sehr beschränkt - und wird der
+Ernsthaftigkeit der Lage und der Stärke unserer Klimagefühle nicht
+gerecht. In den nächsten Wochen wirst du für dich konkrete Schritte
+entdecken, wie du deine Wirksamkeit erhöhen kannst.</p>
+<p><span id="kix.5t1gse1bbf5h"
+class="anchor"></span><strong>Handabdruck</strong></p>
+<p>Germanwatch e.V. stellt in diesem Video das Handabdruck-Konzept vor,
+das die <mark>positiven und nachhaltigen gesellschaftlichen
+Gestaltungsmöglichkeiten beschreibt</mark>: <a
+href="https://www.handprint-hub.de/handabdruck-erklaerfilm-warum-brauchen-wir-die-handabdruck-perspektive"><u>https://www.handprint-hub.de/handabdruck-erklaerfilm-warum-brauchen-wir-die-handabdruck-perspektive</u></a></p>
+<p>Im Unterschied zum Fußabdruck, <mark>der sich auf die negativen
+ökologischen Folgen der menschlichen</mark> Lebensweise <mark>bezieht,
+erfasst der <strong>Handabdruck</strong> <a
+href="https://www.germanwatch.org/de/handprint"><u>https://www.germanwatch.org/de/handprint</u></a>,
+die Möglichkeiten, Rahmenbedingungen so zu verändern, dass nachhaltiges
+Verhalten für alle leichter wird.</mark> Handabdruck-Engagement setzt
+immer an Strukturen, Regeln, Rahmenbedingungen oder Gesetzen an, um
+Nachhaltigkeit bleibend und für viele Personen zu verankern.</p>
+<p><mark>Deine Handabdruck-Vergrößerung ist damit auch die
+Fußabdruckverkleinerung anderer Menschen. (G.Baunach, “Hoch die Hände
+Klimawende”, S.41)</mark></p>
+<p><span id="1825vzprz066"
+class="anchor"></span><strong>Fußabdruck</strong></p>
+<p>Beim CO<sub>2</sub>-Fußabdruck und ökologischen Fußabdruck geht es um
+die negativen Auswirkungen des Verhaltens.</p>
+<p>Der <strong>ökologische Fußabdruck</strong> zeigt, wie viel
+biologisch produktive Land- und Wasserflächen ein Individuum, eine
+Bevölkerung oder eine Aktivität benötigt, um alle konsumierten
+Ressourcen zu produzieren und die anfallenden Abfälle zu absorbieren.
+Dabei fließt die Nutzung von Ackerland, Weideland, Waldflächen,
+Fischgründen und bebauten Flächen sowie die CO<sub>2</sub>-Absorption in
+die Berechnung ein.</p>
+<p>Bei der Berechnung des Fußabdrucks ist die gesellschaftliche
+Infrastruktur mit eingerechnet.</p>
+<p>Der <strong>CO<sub>2</sub>-Fußabdruck</strong> ist eine Maßeinheit
+für den gesamten Betrag der<br />
+CO<sub>2</sub>- Emissionen, welche direkt von Personen oder Produkten
+verursacht werden, sowie durch Lebenssituationen und Aktivitäten
+entstehen. Er ist nur ein Teil des ökologischen Fußabdrucks.</p>
+<p>Wenn du magst, schau mal, was dein ökologischer Fußabdruck ist. - <a
+href="https://uba.co2-rechner.de/de_DE/"><u>https://uba.co2-rechner.de/de_DE/</u></a></p>
+<p>Viele denken bei der eigenen Wirksamkeit als erstes an die
+Reduzierung des eigenen "Fußabdrucks". Dabei haben Haushalte mit ca.10%
+nur einen sehr geringen Anteil an den CO2 Emissionen (Umweltbundesamt,
+<a
+href="https://www.umweltbundesamt.de/daten/klima/treibhausgas-emissionen-in-deutschland/kohlendioxid-emissionen#herkunft-und-minderung-von-kohlendioxid-emissionen"><u>Link</u></a>).</p>
+<p><img src="./media/image11.png"
+style="width:5.59449in;height:3.84722in" /></p>
+<p>Deswegen ist es deutlich zielführender, den Fokus auf den eigenen
+Handabdruck zu legen!</p>
+<p>Wenn man als Einzelperson versuchen möchte, klimafreundliche
+Entscheidungen zu treffen, dann sind nicht alle gleichermaßen
+wirksam:</p>
+<p><img src="./media/image12.png"
+style="width:5.59449in;height:4.09722in" /></p>
+<p><strong>Inner Development Goals (IDGs)</strong></p>
+<p>Welche Fähigkeiten brauchen wir, um mit der komplexen Welt und ihren
+Herausforderungen auf gute Weise umzugehen? Die “inneren
+Entwicklungsziele” (IDGs) , beschreiben die dazu nötigen Kompetenzen und
+Wege, sie zu entdecken und zu stärken. Die Kompetenzen wurden fünf
+Dimensionen zugeordnet.</p>
+<p><img src="./media/image13.png"
+style="width:5.59449in;height:2.05556in" /></p>
+<p>Die Dimensionen beschreiben 23 Fähigkeiten und Qualitäten des
+menschlichen inneren Wachstums und der menschlichen Entwicklung.</p>
+<p>Das Rahmenwerk wurde von einem Team internationaler Forscher:innen
+nach einer umfassenden Outreach-Konsultation mit mehr als tausend
+Personen entwickelt.</p>
+<p>Weitere Informationen dazu findest du hier:</p>
+<p><a
+href="https://www.innerdevelopmentgoals.org/"><u>https://www.innerdevelopmentgoals.org/</u></a></p>
+<h2 data-number="2.5" id="kommunikation-über-das-klima"><span
+class="header-section-number">2.5</span> Kommunikation über das
+Klima</h2>
+<p><strong>Warum wir überzeugende Klimakommunikation
+brauchen</strong></p>
+<p>Gute Klimakommunikation kann:</p>
+<ul>
+<li><p>Die “Klima-Schweigespirale” durchbrechen<a href="#fn5"
+class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a> -
+Die tatsächlichen Mehrheitsverhältnisse in der sozialen Gruppe oder
+Gesellschaft sind nicht ausschlaggebend dafür, ob man eher spricht oder
+schweigt, sondern die subjektiv wahrgenommenen. Da beim Klimathema
+jedoch oftmals lautstarke und selbstbewusst auftretende Randgruppen die
+Debatte dominieren und sich die “schweigende” Mehrheit zu wenig darüber
+austauscht, werden die tatsächlichen herrschenden Meinungsverhältnisse
+oft verschleiert.<a href="#fn6" class="footnote-ref" id="fnref6"
+role="doc-noteref"><sup>6</sup></a></p></li>
+<li><p>Verbindungen zu anderen Menschen, Gruppen, Organisationen
+schaffen</p></li>
+<li><p>Dringlichkeit zum Handeln verdeutlichen (TEST TEST WEG
+MACHEN)</p></li>
+<li><p>Bewusstsein für lokale Auswirkungen öffnen</p></li>
+<li><p>Veränderungsprozesse für climate action und innere Transformation
+anstoßen</p></li>
+</ul>
+<p><strong>Grundlagen: Do’s and Don’t der
+Klimakommunikation</strong></p>
+<p>“Man kann nicht nicht kommunizieren”</p>
+<p>Paul Watzlawick</p>
+<p>Auch das Vermeiden eines Themas zeigt anderen Menschen, dass das
+Thema so heikel ist, dass es besser nicht angeschaut werden sollte.
+Insofern sind wir alle, bewusst oder unbewusst, Teil der
+Klimakommunikation.</p>
+<p>Wenn wir etwas damit erreichen wollen, muss uns klar sein: der 40
+Jahre andauernde Versuch, durch Informationsvermittlung auf
+wissenschaftlicher Basis relevante Veränderungen anzustoßen, ist
+gescheitert. Information reicht nicht.</p>
+<p>Wir kennen das von anderen Themen: sich mit Menschen zu verständigen,
+die eine andere Meinung zu etwas haben, was uns wichtig ist, ist schwer.
+Oft neigen wir dazu, ihnen etwas erklären zu wollen, von dem wir
+glauben, sie hätten es nicht verstanden. Das funktioniert aber nur, wenn
+die Gesprächspartner tatsächlich bereit sind, Wissen von dir zu
+übernehmen.</p>
+<p>Dazu brauchen sie vor allem den Eindruck, dass ihr gemeinsame Werte
+habt. Werte, wie z.B. für eine gute Zukunft der Familie sorgen, sind die
+Orientierung für das, was unseren Gedanken, Gefühlen, Meinungen und
+Handlungen zugrunde liegt.</p>
+<p>Wir können Menschen nur zum kleinen Teil durch Argumente überzeugen.
+Der Weg ist, Stimmigkeit herzustellen mit den Werten und Bewertungen des
+Gegenübers. Dazu gehört</p>
+<ul>
+<li><p><strong>Akzeptanz</strong>, dass die andere Person andere
+Lösungen für sich gefunden hat und diese für sie relevant sind</p></li>
+<li><p>Im Gespräch wird <strong>ein gemeinsames "wir"</strong> erlebt,
+angetriggert durch gemeinsame Werte</p></li>
+<li><p>Wahrnehmung was Gesprächspartner:innen fehlt, welche ihrer
+<strong>Bedürfnisse</strong> aktuell unbefriedigt sind und durch deinen
+Vorschlag besser befriedigt werden können</p></li>
+<li><p>Vorschlag einer Lösung, wie “wir” besser in Einklang mit aktuell
+unbefriedigten Bedürfnissen sein können.</p></li>
+</ul>
+<p>Quelle: Center for Applied European Studies (CAES). _(K)eine Rückkehr
+zum Normalzustand? - Prof. Dr. Hartmut Rosa u. Dr. Gerald Hüther _,
+2021. [<a
+href="https://www.youtube.com/watch?v=wTY9zTjnLQ8%5D(https://www.youtube.com/watch?v=wTY9zTjnLQ8)"><u>https://www.youtube.com/watch?v=wTY9zTjnLQ8](https://www.youtube.com/watch?v=wTY9zTjnLQ8)</u></a>.</p>
+<p><strong>Besser übers Klima reden: 10 wissenschaftlich belegte
+Regeln</strong></p>
+<p><a
+href="https://www.kea-bw.de/fileadmin/user_upload/Publikationen/11_Klimakommunikation_4-Seiter_Besser_u__bers_Klima_reden.pdf"><u>https://www.kea-bw.de/fileadmin/user_upload/Publikationen/11_Klimakommunikation_4-Seiter_Besser_u__bers_Klima_reden.pdf</u></a></p>
+<p><strong>Do’s</strong></p>
+<ul>
+<li><p>Faire/ gewaltfreie/ empathische Kommunikation</p></li>
+<li><p>respektiere die Werte deiner Gesprächspartner:innen</p></li>
+<li><p>Höre gut zu und stelle Fragen</p></li>
+<li><p>Gemeinsame Nenner als Ausgangsbasis nehmen (Werte, Sorgen,
+…)</p></li>
+<li><p>auf konkrete und regionale Gesprächsinhalte achten</p></li>
+<li><p>Geschichten über Menschen oder die eigene Geschichte
+erzählen</p></li>
+<li><p>Erzähle von eigenen Erfahrungen, die eine Verbindung zu deinen
+Gesprächspartner:innen herstellen können</p></li>
+<li><p>Den Blick auf Positives und Motivierendes lenken (Zukunftsvision,
+Klimalösungen, Vorbilder, selbst umgesetzte Handlungsoptionen/
+Klima-Handabdruck)</p></li>
+<li><p>Gefühlen einen Raum geben und ggf. das Thema wechseln, falls zu
+emotional</p></li>
+<li><p>Über das Stoppen der Verschmutzung oder Zerstörung sprechen, z.B.
+ich kämpfe gegen die Zerstörung der menschlichen
+Lebensgrundlagen</p></li>
+<li><p>sprich über die Dringlichkeit der Veränderung und begründe das
+mit aktuellen Beobachtungen oder wissenschaftlich belegten Fakten, z.B.
+aus der Tagesschau (<a
+href="https://www.tagesschau.de/wissen/klima/klimaerwaermung-europa-100.html"><u>https://www.tagesschau.de/wissen/klima/klimaerwaermung-europa-100.html</u></a>)</p></li>
+<li><p>Infos, Quellen, Events teilen und/ oder kuratieren</p></li>
+<li><p>Üben, dass gute Klimakommunikation gelingt</p></li>
+</ul>
+<p><strong>Dont’s</strong></p>
+<ul>
+<li><p>aggressiv oder abwertend gegenüber Zuhörenden sein</p></li>
+<li><p>perfektionistisch sein, das Unzureichende betonen</p></li>
+<li><p>Nichts zu sagen aus Angst, es könnte falsch oder nicht perfekt
+sein</p></li>
+<li><p>Vorwürfe machen</p></li>
+</ul>
+<p><strong>Möglichkeiten für Gespräche über die
+Klimakatastrophe</strong></p>
+<p>Du kannst das Thema in einer geeigneten Situation ansprechen. Oder du
+kannst die Wahrscheinlichkeit erhöhen, dass andere das Thema ansprechen,
+indem du z.B. selbst etwas Sichtbares zum Klimaschutz beiträgst.</p>
+<blockquote>
+<p>“Tue Gutes und lass dich darauf ansprechen.” <a href="#fn7"
+class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a></p>
+</blockquote>
+<p><strong>Gelegenheiten für spontane Konversationen für eine
+Klimakommunikation:</strong></p>
+<ul>
+<li><p>die vorherrschende Hitzewelle</p></li>
+<li><p>eine aktuelle Nachrichtenschlagzeile</p></li>
+<li><p>eine viel diskutierte Talk-Show Debatte</p></li>
+<li><p>etwas was man neu gelernt hat</p></li>
+<li><p>ein Treffen mit einer inspirierenden Person</p></li>
+<li><p>eine regionale Klimaschutzaktion</p></li>
+<li><p>eine klimafreundliche Anschaffung z.B. Wärmepumpe oder
+Abschaffung z.B. Auto verkauft ohne ein neues zu kaufen der
+Nachbarin</p></li>
+</ul>
+<p>Es gibt verschiedene Formen, um das Thema für viele Menschen sichtbar
+zu machen. Wann und wo kommen viele Menschen zusammen? Welche
+Kommunikationsform passt zu dir?</p>
+<ul>
+<li><p>Social Media</p></li>
+<li><p>Messenger Dienste</p></li>
+<li><p>persönliche Gespräche mit Verwandten, Freund:innen oder
+Bekannten, wenn sie in größeren Gruppen zusammenkommen</p></li>
+</ul>
+<p>Vielleicht kannst du dir auch Unterstützung holen bei Menschen aus
+deinem Verwandtschafts-, Freundschafts- und Bekanntenkreis sein, die
+noch einflussreicher sind? Oder zum Beispiel hier tätig sind</p>
+<ul>
+<li><p>Minister:in</p></li>
+<li><p>Hochschulprofessor:in</p></li>
+<li><p>Führungskraft in einem Unternehmen</p></li>
+<li><p>Mitglied in einem Verein, das sich in der Lokalpolitik engagiert
+oder Bürgermeister:in kennt</p></li>
+</ul>
+<p><strong>Gespräche in der Familie</strong></p>
+<p>In deiner Familie ist es besonders wichtig, auf Respekt und Toleranz
+zu achten. Besser Fragen stellen, z.B. zu Werten, als sich selbst durch
+Aussagen durchsetzen zu wollen. Achte auf den gemeinsamen Nenner, die
+Basis eures Verständnisses. Falls Meinungsverschiedenheiten nach
+mehreren Gesprächsversuchen zu groß sind, das Thema lieber vermeiden und
+nach längerer Zeit einen neuen Versuch wagen.</p>
+<h1 data-number="3" id="lernpfad"><span
+class="header-section-number">3</span> Lernpfad</h1>
+<p>Ein Überblick über den Lernpfad:</p>
+<p><img src="./media/image14.png"
+style="width:5.59449in;height:3.875in" /></p>
+<h2 data-number="3.1" id="kata-0-unsere-reise"><span
+class="header-section-number">3.1</span> Kata 0: Unsere Reise</h2>
+<p>Im ersten Treffen findest du dich mit den Menschen, die mit dir diese
+Reise unternehmen wollen, um gemeinsam einzusteigen und anzukommen.</p>
+<p>Es geht im heutigen Treffen darum, dass du dich in Bezug auf Inhalte
+und Aufbau der Lernreise orientieren kannst, sowie deine
+Wegbegleiter:innen und uns vom Organisationsteam als deine Guides für
+die folgenden 12 Wochen kennenlernst.</p>
+<p>Wir geben dir einen Überblick über verschiedene Themenfelder rund um
+Nachhaltigkeit und Klimaschutz, die für dich und deinen Weg zu mehr
+Nachhaltigkeit interessant sein können. Dazu zeigen wir dir, wo du für
+dich relevante Quellen und Links findest.</p>
+<p>Eure Hauptaufgabe in Woche 0 ist, eure wöchentlichen Treffen zu
+vereinbaren und Spielregeln für die Zusammenarbeit zu definieren.</p>
+<p><strong><em>Hinweis:</em></strong> Begleitend zu unserem Guide haben
+wir für dich und euch ein virtuelles Whiteboard (<a
+href="https://miro.com/app/board/uXjVNh9bSsQ=/"><strong>Link</strong></a>)
+erarbeitet, auf dem Du zu jeder Woche deine Ergebnisse, Notizen oder
+Anmerkungen dokumentieren und mit deinen Mitreisenden teilen kannst.
+Hier findest Du auch alle begleitenden Arbeitsblätter.</p>
+<p><strong>Die Agenda:</strong></p>
+<ul>
+<li><p><strong>Begrüßung</strong> <em>(5 Min)</em></p></li>
+<li><p><strong>Check-in:</strong> Ankommen <em>(5 Min)</em></p></li>
+<li><p><strong>Austausch / Reflexion:</strong> in der Gruppe <em>(10
+Min)</em></p></li>
+<li><p><strong>Input:</strong> Lernreise Nachhaltigkeit <em>(10
+Min)</em></p></li>
+<li><p><strong>Kata:</strong> Wie organisieren wir unseren Zirkel?
+<em>(15 Min)</em></p></li>
+<li><p><strong>Kata:</strong> Meine Wünsche für die Reise <em>(5
+Min)</em></p></li>
+<li><p><strong>Kata in der Gruppe:</strong> Was nimmt sich jeder von uns
+vor? <em>(10 Min)</em></p></li>
+<li><p><strong>Check-out:</strong> Das nächste Treffen bestätigen <em>(5
+Min)</em></p></li>
+<li><p><strong>Bild / Zitat der Woche</strong> und
+<strong>weiterführende Links</strong></p></li>
+</ul>
+<p><strong>Check-In: Ankommen <em>(5 Min)</em></strong></p>
+<p>3 Leitfragen für dich - kurz und knackig</p>
+<ul>
+<li><p>Wer bin ich und was macht mich aus?</p></li>
+<li><p>Was assoziiere / verbinde ich mit Nachhaltigkeit? (3
+Hashtags)</p></li>
+<li><p>Was hat mich dazu gebracht, mich aktiv auf diese Lernreise zu
+begeben? (Formuliere es in einem Satz)</p></li>
+</ul>
+<p>Halte Deine Ergebnisse im linken, oberen Feld des <a
+href="https://miro.com/app/board/uXjVNAbaJWo=/?moveToWidget=3458764579164332070&amp;cot=14"><u>Climate
+Action Canvas</u></a> fest, der dich über die gesamte Lernreise hinweg
+begleiten wird.</p>
+<p><strong>Austausch / Reflexion (5 Min)</strong></p>
+<p>Tauscht euch zu den Antworten auf die 3 Leitfragen des Check-ins
+aus.</p>
+<p><em>TIPP: TIMEBOXING,<br />
+Wer von euch achtet auf die Zeit, dass jede:r ausgewogen zu Wort
+kommt?</em></p>
+<p>Input: Grundlagen zur Lernreise und Fragen <em>(10 Min)</em></p>
+<ul>
+<li><p>Was geschieht in den kommenden 13 Wochen?<br />
+<em>Die</em> <a
+href="https://miro.com/app/board/uXjVNh9bSsQ=/?moveToWidget=3458764592737839075&amp;cot=14"><em><u>Landkarte</u></em></a>
+<em>für die drei Phasen deiner Lernreise haben wir Dir auf einem
+virtuellen Whiteboard vorbereitet</em></p></li>
+<li><p>Grundgedanken der Autor:innen zu Struktur und Phasen der
+Lernreise<br />
+Was liegt ihnen am Herzen? Lies <a
+href="#xo2636ngqoz1"><u>hier</u></a></p></li>
+<li><p>Welche Themengebiete kann die Lernreise abdecken?<br />
+<em>Du bekommst</em> <a
+href="https://miro.com/app/board/uXjVNh9bSsQ=/?moveToWidget=3458764591176737435&amp;cot=14"><em><u>hier</u></em></a>
+<em>dafür Überblick und Impulse, ins Tun zu kommen.</em></p></li>
+</ul>
+<p>Wie organisiert ihr euren Zirkel? (20 Min)</p>
+<p>Geht nochmal kurz die <a
+href="https://cogneon.github.io/lernos-achtsamkeit/de/2-_-lernOS-Grundlagen/">Grundlagen
+im LernOS-Leitfaden</a> durch oder tauscht euch darüber aus. Woche 0 ist
+dazu da, den Ablauf kennenzulernen und offene Fragen zu klären.</p>
+<p>Hinweis: Die Informationen zum Thema der Woche sind meistens sehr
+kurz gehalten. Der Fokus liegt auf der Praxis, der Kata (Aufgabe), der
+Reflexion, dem Austausch. Wer es genauer und tiefer wissen will, kann
+sich vor dem Treffen einlesen und “weiterführenden Links” folgen.</p>
+<p>Organisatorische Tipps:</p>
+<ul>
+<li><p>Die Agenda der wöchentlichen Treffen ist so ausgelegt, dass
+ungefähr <strong>eine Stunde</strong> ausreichend sein sollte.
+Orientiere dich an der vorgeschlagenen Dauer der einzelnen Punkte,
+sodass noch Zeit ist für die wertvollen Elemente am Ende (Austausch, Was
+nehme ich mir vor, Check-Out).<br />
+Falls du spürst, dass du mehr Zeit brauchst, z. B. wenn ihr zu sechst
+seid, dann verlängert den Termin.</p></li>
+<li><p>Vereinbare mit den anderen eine Terminserie. Am besten gleich mit
+ein paar “Reserve-Wochen”, falls mal ein Termin ausfallen
+sollte.</p></li>
+<li><p>Vereinbart, wie ihr zwischen den Terminen miteinander
+kommunizieren wollt. Hier findet ihr <a
+href="https://cogneon.github.io/lernos-achtsamkeit/de/2-2-lernOS-Circle/">Anregungen
+zu Tools</a>.</p></li>
+<li><p>Wie wollt ihr mit Abwesenheiten (z.B. Urlaub) und spontanen
+Ereignissen umgehen? Den Termin ausfallen lassen, sobald einer
+fehlt?<br />
+Tipp 1 für virtuelle Treffen: das Meeting aufzeichnen.<br />
+Tipp 2 für die Dokumentation: Legt euch ein virtuelles Whiteboard an,
+auf dem ihr eure Ergebnisse speichern und weiter bearbeiten
+könnt.</p></li>
+<li><p>Wollt ihr euch an den Ablauf halten und in 13 Wochen “durch”
+sein? Oder mal eine “Sonder-Woche” einschieben, wenn sich ein spannendes
+Thema ergeben sollte?</p></li>
+<li><p>Es ist völlig ok, wenn nicht alle Fragen vollständig beantwortet
+sind. Vieles wird sich ganz von selbst aus der Dynamik des Zirkels
+ergeben und klären.</p></li>
+<li><p>Bleib dran, auch wenn du mal weniger Zeit haben solltest, als du
+dir das wünschst. Lieber weniger als gar nicht! Auch das ist
+Achtsamkeit!</p></li>
+</ul>
+<p><strong>Verständigt euch mindestens über:</strong></p>
+<ul>
+<li><p><strong>Wann treffen wir uns zur “Woche 1”?</strong></p></li>
+<li><p><strong>Wer übernimmt die Moderationsrolle für die Woche
+1?</strong></p></li>
+</ul>
+<p><strong>Tipp:</strong> Wenn ihr Online-Meetings machen wollt, dann
+sollten möglichst alle Menschen virtuell teilnehmen. Es fühlt sich im
+Allgemeinen nicht gut an, wenn einer oder zwei “nur” virtuell da sind,
+während die anderen physisch in einem Raum sind.</p>
+<p>Kata &amp; Ergebnisse teilen:<br />
+Meine Wünsche und Erwartungen <em>(15 Min)</em><br />
+für die Reise</p>
+<ul>
+<li><p>Welche Bereiche zum Thema Nachhaltigkeit sind für mich
+wichtig?</p></li>
+<li><p>Was wünsche ich mir hier, sowohl inhaltlich wie auch voneinander
+und miteinander?</p></li>
+<li><p>Für mich haben sich die 12 Wochen gelohnt, wenn …</p></li>
+</ul>
+<p><mark>Kata als Hausaufgabe für die nächste Woche</mark></p>
+<p>Findling - mache einen Spaziergang möglichst in der Natur und suche
+einen Gegenstand, der mit dir resoniert. Bringe den Gegenstand oder ein
+Foto davon zur nächsten Gruppensession mit.</p>
+<p>Check-out <em>(10 Min)</em></p>
+<p>Wenn Dir die gute Nachhaltigkeitsfee drei Prisen Zauberpulver
+schenken würde, welche Dinge würdest du damit verändern oder
+vorantreiben ?</p>
+<p>Zitat der Woche</p>
+<blockquote>
+<p>“Jedem Anfang wohnt ein Zauber inne!”</p>
+</blockquote>
+<h3 data-number="3.1.1" id="arbeitsblatt-climate-action-canvas"><span
+class="header-section-number">3.1.1</span> Arbeitsblatt: Climate Action
+Canvas</h3>
+<p><img src="./media/image15.png"
+style="width:8.99244in;height:6.21671in" /><br />
+<img src="./media/image24.png"
+style="width:2.36844in;height:3.15625in" /></p>
+<h2 data-number="3.2"
+id="kata-1-reflektiere-deine-gedanken--und-gefühlswelt"><span
+class="header-section-number">3.2</span> Kata 1: Reflektiere deine
+Gedanken- und Gefühlswelt</h2>
+<p><strong>Agenda</strong></p>
+<ul>
+<li><p><strong>Check-in</strong>: In welcher Umgebung fühlst du dich
+glücklich? (5 Min)</p></li>
+<li><p><strong>Kata:</strong> Selbstmitgefühl - Erkunde deine Gedanken
+und Gefühlswelt</p></li>
+</ul>
+<blockquote>
+<p>(20 Min)</p>
+</blockquote>
+<ul>
+<li><p><strong>Austausch</strong>: Was waren eure wichtigsten
+Erkenntnisse? (20 Min)</p></li>
+<li><p><strong>Kata</strong>: Selbstwirksamkeits-Check (5 Min)</p></li>
+<li><p><strong>Check-ou</strong>t: Wie fühle ich mich nach dieser
+Session - in einem Wort?</p></li>
+</ul>
+<blockquote>
+<p>(5 Min)</p>
+</blockquote>
+<p><strong>Check-In: Ankommen</strong></p>
+<p>Der erste Schritt auf deiner Lernreise beginnt bei und mit dir.</p>
+<p>Teile mit den anderen: In welcher Umgebung fühlst du dich
+glücklich?</p>
+<blockquote>
+<p><strong>Kata: Selbstmitgefühl - Erkunde deine Gedanken- und
+Gefühlswelt</strong></p>
+</blockquote>
+<p>Am Anfang dieser Lernreise wollen wir zunächst uns selbst besser
+verstehen und was uns zum Thema Klimaschutz und Nachhaltigkeit an- und
+umtreibt. Zur Selbsteinschätzung nutzen wir hierfür eine Empathie Map.
+Sie kommt ursprünglich aus der Marktforschung und wird üblicherweise
+dazu genutzt, sich besser in die Gedanken- und Gefühlswelt einer
+Zielgruppe einzufühlen. Da es bei dieser Lernreise in erster Linie um
+uns geht, wollen wir dieses Tool nutzen, Empathie mit uns selbst
+aufzubauen und unsere Gedanken- und Gefühlswelt zu reflektieren.</p>
+<p>Beantworte die sechs Fragen und halte die entsprechenden Stichworte
+in<br />
+die Vorlage ( siehe nächste Seite) fest. Für mehr Hintergrund zu
+“Klimagefühlen” kannst du auf die Quellen unter “Weiterführende Links”
+zurückgreifen.</p>
+<ul>
+<li><p>Was fühle und denke ich in Bezug auf Nachhaltigkeit, Klimaschutz
+und Schutz des Umfelds, in dem ich lebe?</p></li>
+<li><p>Was höre und sehe ich in Bezug auf Nachhaltigkeit?</p></li>
+<li><p>Was sage ich und tue ich?</p></li>
+<li><p>Was sind meine Bauchschmerzen?</p></li>
+<li><p>Was sind meine Hoffnungen?</p></li>
+</ul>
+<p><strong>Tipp:</strong> Es muss nicht alles in aller Ausführlichkeit
+beschrieben werden. Wenn du zu einem Feld keine Stichpunkte findest, ist
+das nicht dramatisch. Du kannst deine Selbsteinschätzung jederzeit
+ergänzen.</p>
+<h3 data-number="3.2.1"
+id="arbeitsblatt---meine-selbsteinschätzung-zur-nachhaltigkeit"><span
+class="header-section-number">3.2.1</span> Arbeitsblatt - Meine
+Selbsteinschätzung zur Nachhaltigkeit</h3>
+<h3 data-number="3.2.2" id="section"><span
+class="header-section-number">3.2.2</span> <img
+src="./media/image16.png"
+style="width:8.39236in;height:5.92692in" /></h3>
+<p><strong>Erläuterungen zum Arbeitsblatt</strong></p>
+<p><img src="./media/image17.png"
+style="width:5.59449in;height:3.95833in" /></p>
+<p><img src="./media/image18.png"
+style="width:5.89555in;height:4.15104in" /></p>
+<p><strong>Austausch</strong></p>
+<p>Teilt eure wichtigsten Erkenntnisse aus der Übung und tauscht euch
+darüber aus: Was ist euch klar geworden? Was habt ihr möglicherweise
+Neues über euch selbst erfahren?</p>
+<p><strong>Kata: (Selbst-)Wirksamkeits-Check</strong></p>
+<p>Ein wichtiges Ziel dieser Lernreise ist es, unsere Selbstwirksamkeit
+in Bezug auf Klimaschutz- und Nachhaltigkeit zu steigern. Trefft nun zu
+Beginn eurer Reise eine Selbsteinschätzung anhand der folgenden
+Skala:</p>
+<p>Wie wirksam fühle ich mich im Bereich Klimaschutz und Nachhaltigkeit
+auf einer Skala von 1 bis 10?</p>
+<p>1 bedeutet: Ich fühle mich vollständig unwirksam - ich kann nichts
+ausrichten</p>
+<p>10 bedeutet: Ich fühle mich vollständig wirksam - Ich kenne meine
+Hebel, ich weiß was ich tun kann und tue es auch</p>
+<p>I—-----------------------------------------I--------------------------------------------I</p>
+<p>1 10</p>
+<p>**Check-out** Wie fühle ich mich nach dieser Session - in einem
+Wort?</p>
+<p><strong>Weiterführende Links:</strong></p>
+<p>How your climate emotions can save the world | Katharina Van
+Bronswijk | TEDxHSG:</p>
+<p><a
+href="https://www.youtube.com/watch?v=ZE_TMzLCI_Y"><u>https://www.youtube.com/watch?v=ZE_TMzLCI_Y</u></a></p>
+<p>Volker Busch: Kopf hoch</p>
+<p>Podcast “Auch das noch” - warum ein Psychiater anders über Krisen
+spricht als Greta Thunberg</p>
+<p><a
+href="https://podcasts.apple.com/lu/podcast/auch-das-noch/id1652019166?i=1000652688168"><u>https://podcasts.apple.com/lu/podcast/auch-das-noch/id1652019166?i=1000652688168</u></a></p>
+<p><a
+href="https://www.zdf.de/nachrichten/wissen/klimawandel-gesellschaft-terrax-lea-dohm-kolumne-100.html"
+class="uri">https://www.zdf.de/nachrichten/wissen/klimawandel-gesellschaft-terrax-lea-dohm-kolumne-100.html</a></p>
+<h2 data-number="3.3" id="kata-2-emotion-und-wirksamkeit"><span
+class="header-section-number">3.3</span> Kata 2: Emotion und
+Wirksamkeit</h2>
+<p><strong>Agenda</strong></p>
+<ul>
+<li><p><strong>Check-in</strong> (10 Min)</p></li>
+<li><p><strong>Diskussion:</strong> Wo fühlst du dich derzeit wirksam?
+(15 Min)</p></li>
+<li><p><strong>Input</strong>: Hebel und Wirksamkeit von Aktivität (15
+Min)</p></li>
+<li><p><strong>Kata:</strong> Mein Klima Purpose (10 Min)</p></li>
+<li><p><strong>Check-out:</strong> Was ist mir in dieser Woche klar
+geworden? (10 Min)</p></li>
+</ul>
+<p><strong>Check in</strong></p>
+<p>Was bewegt dich, wenn du an deine Möglichkeiten denkst, für eine gute
+nachhaltige Zukunft aktiv zu werden? Wie fühlt sich das an?</p>
+<p>Halte deine Gedanken in der linken Spalte des <strong><a
+href="https://miro.com/app/board/uXjVNh9bSsQ=/?moveToWidget=3458764592747561193&amp;cot=14"><u>Climate
+Action Canvas</u></a></strong> Klima-Momente /Klima-Gefühle fest.</p>
+<p><strong><em>Hinweis</em></strong>: Wie deckt sich das mit deiner
+Selbsteinschätzung aus Woche 1?</p>
+<p><strong>Diskussion: Wo fühlst du dich derzeit wirksam?</strong></p>
+<p><mark>Menschen werden wirksam, wenn ihre Handlungen und
+Entscheidungen zu messbaren, positiven Ergebnissen führen.</mark></p>
+<p><mark>In welchem Bereich fühlst du dich derzeit am meisten
+wirksam?</mark></p>
+<ul>
+<li><p><mark>in deinem eigenen Verhalten</mark></p></li>
+<li><p><mark>in deinem lokalen Umfeld, wie Familie, Schule, Gemeinde,
+Verein</mark></p></li>
+<li><p><mark>in größeren Zusammenhängen, wie zum Beispiel der
+Politik</mark></p></li>
+</ul>
+<p>Hebel und Wirksamkeit von Aktivität</p>
+<p>Hintergrundwissen zur Frage, welche Aktivitäten tatsächlich wirksam
+sind, findest du im Grundlagenkapitel unter <a
+href="#_hrqpq852qwqu"><u>Hebel und Wirksamkeit von
+Aktivität</u></a>.</p>
+<p><strong>Kata: Mein Klima-Purpose</strong></p>
+<p>Schreibe deine ersten Gedanken dazu in das Feld “Dein Klima-Purpose”
+im <a
+href="https://miro.com/app/board/uXjVNh9bSsQ=/?moveToWidget=3458764592747561193&amp;cot=14"><strong><u>Climate
+Action Canvas</u></strong></a>. Im Laufe des Lernzirkels wirst du auf
+dieses Feld ggf. zurückkommen und es ergänzen.</p>
+<p>Fülle aus “Dein Klima-Purpose, was bewegt dich, und was willst du
+bewegen?”</p>
+<p>Check-out: Was ist mir diese Woche klar geworden?</p>
+<p>Nutzt eine der folgenden Fragen als Inspiration für eure
+Reflexion</p>
+<ul>
+<li><p>Was hat dir diese Woche Energie gegeben?</p></li>
+<li><p>Welche Annahmen oder Glaubenssätze hast du überdacht?</p></li>
+<li><p>Und was fällt dir schwer zu akzeptieren?</p></li>
+</ul>
+<p><strong>Zitat der Woche</strong></p>
+<p><em>“Ich gehe immer davon aus, ich kann die Welt alleine nicht retten
+(...). (aber) wenn Menschen zusammenkommen, kann man mit Wundern
+rechnen.” (Gabriel Baunach im Climaware Podcast )</em></p>
+<p><strong>Weiterführende Links</strong></p>
+<p>Ein Interview, warum klimabewusster Konsum nicht ausreicht mit
+Gabriel Baunach im SWR (<a
+href="https://www.swr.de/swr1/swr1leute/gabriel-baunach-klimawandel-klimakrise-klimawende-100.html"><u>Link</u></a>)</p>
+<p><strong>Wenn du noch etwas Zeit hast:</strong></p>
+<p>Wir behandeln in diesem Lernzirkel-Leitfaden nicht die Frage, warum
+unsere gesellschaftlichen Systeme so sind, wie sie sind. Wenn dich diese
+Aspekte interessieren, dann findest du hier Ideen zum Weiterlesen.</p>
+<ul>
+<li><p>Die westliche Vorstellung vom Selbst als einer von unserer
+Mitwelt losgelösten Einheit, ist kulturell geprägt. Andere Sichten auf
+die Welt gab es schon immer und sind möglich:</p>
+<ul>
+<li><p><a
+href="https://zufriedenleben.eu/selbstkonzept/"><u>https://zufriedenleben.eu/selbstkonzept/</u></a></p></li>
+<li><p><mark>de Oliveira, V. M. (2021).</mark> <em>Hospicing modernity:
+Facing humanity's wrongs and the implications for social
+activism</em><mark>. North Atlantic Books;</mark></p></li>
+</ul></li>
+<li><p>Unser Verständnis von Glück und was es für ein glückliches Leben
+braucht ist häufig nicht zutreffend:</p>
+<ul>
+<li>Yale Kurs auf Coursera: “<a
+href="https://www.coursera.org/learn/the-science-of-well-being"><u>The
+Science of Well-Being</u></a>”</li>
+</ul></li>
+<li><p>Ist der Kapitalismus vereinbar mit den planetaren Grenzen?</p>
+<ul>
+<li><p><a
+href="https://www.theguardian.com/environment/2021/oct/30/capitalism-is-killing-the-planet-its-time-to-stop-buying-into-our-own-destruction"><u>https://www.theguardian.com/environment/2021/oct/30/capitalism-is-killing-the-planet-its-time-to-stop-buying-into-our-own-destruction</u></a></p></li>
+<li><p>The Story of Stuff: <a
+href="https://www.storyofstuff.org/movies/story-of-stuff/"><u>https://www.storyofstuff.org/movies/story-of-stuff/</u></a></p></li>
+</ul></li>
+<li><p>Unser System für die Lebensmittelproduktion ist kaputt</p>
+<ul>
+<li><p>The true cost of your cheap chicken - documentary New York Times
+- <a
+href="https://www.nytimes.com/video/opinion/100000007886421/factory-farming-chicken.html"><u>Link</u></a></p></li>
+<li><p>Global Food system is broken (UN, 2023) - <a
+href="https://news.un.org/en/story/2023/07/1139037"><u>Link</u></a></p></li>
+</ul></li>
+<li><p>Project Drawdown <a
+href="https://drawdown.org/"><u>https://drawdown.org/</u></a>:
+wissenschaftlich fundierte Lösungen zur Umkehrung der globalen Erwärmung
+identifizieren und fördern</p></li>
+</ul>
+<h2 data-number="3.4" id="kata-3-bleibe-informiert"><span
+class="header-section-number">3.4</span> Kata 3: Bleibe informiert</h2>
+<p><mark>Fakten und klare Informationen „mit Hand &amp; Fuß” zum Thema
+Nachhaltigkeit sind das Fundament, die Wirkzusammenhänge und Folgen des
+eigenen Handelns – ganz für dich, direkt in deinem Umfeld sowie weiter
+darüber hinaus - zu erkennen, zu verstehen, einzuordnen und wirksam
+beeinflussen zu können.</mark></p>
+<p><mark>Die Fragen in dieser Woche sind: Wie hast du dich bisher zum
+Thema Nachhaltigkeit informiert? Wo und wie würdest du suchen, um für
+Input zum Thema fündig zu werden?</mark></p>
+<p><mark>Entdecke in dieser Woche gemeinsam mit dem Team (weitere)
+Quellen und Wege, Wissen zu erweitern und zu vertiefen.</mark></p>
+<p><mark>Nun ist es so, dass die Fülle an Information(squellen) wächst
+und wächst. Alle Daten und Fakten zu erfassen, ist nicht möglich und ist
+auch nicht Ziel dieser Lernreise. Dennoch hilft eine inhaltliche
+Übersicht zur Orientierung und zur Ideenfindung, wie Du selbst aktiv
+werden kannst.</mark></p>
+<p><mark>Dafür haben wir am Ende des Dokuments - zum Einstieg für dich /
+euch - eine kleine, keinesfalls vollständige Sammlung von Links zu
+Fakten, Informationen und Wissensquellen zu Inhalten, Aktionen &amp;
+Initiativen, interessanten Plattformen und Foren von Organisationen
+&amp; Institutionen zusammengetragen, die sich mit Nachhaltigkeit
+beschäftigen und die ihr nutzen und ergänzen könnt.</mark> (<a
+href="#anhang-literaturliste"><u>Literaturliste</u></a>)
+<mark></mark></p>
+<blockquote>
+<p><mark></mark></p>
+</blockquote>
+<p><mark>Es stellt sich an dieser Stelle für euch die Frage: „Wie wollen
+wir in unserer Gruppe unsere Ergebnisse sichern, damit wir sie auch
+teilen können?</mark></p>
+<p><mark>Welche Möglichkeiten und Instrumente du dafür nutzen kannst,
+findest du</mark> <mark><a
+href="https://cogneon.github.io/lernos-for-you/de/3-Anhang/"><strong><u>hier</u></strong></a>
+oder nutzt das <a
+href="https://miro.com/app/board/uXjVNh9bSsQ=/"><u>Whiteboard</u></a>).</mark></p>
+<p><strong>Agenda</strong></p>
+<ul>
+<li><mark><strong>Check-in</strong>: Wie habe ich mich bisher zum Thema
+Nachhaltigkeit informiert?</mark></li>
+</ul>
+<blockquote>
+<p><mark>(10 Min)</mark></p>
+</blockquote>
+<ul>
+<li><p><mark><strong>Input und Kata:</strong> Quellenübersicht (15
+Min)</mark></p></li>
+<li><p><mark><strong>Austausch / Reflexion</strong>: in der Gruppe (10
+Min)</mark></p></li>
+<li><p><mark><strong>Austausch</strong>: Was nimmt sich jeder von uns
+vor? (10 Min)</mark></p></li>
+<li><p><mark><strong>Check-ou</strong>t: Drei #s zu den Highlights der
+heutigen Session (5 Min)</mark></p></li>
+</ul>
+<p><strong>Check - in: Wie habe ich mich bisher informiert</strong></p>
+<p><mark>Schritt 1: Notiere deine 3 bevorzugten Informationsquellen zu
+Nachhaltigkeit (2 - 3 Min)</mark></p>
+<p><mark>Frage dich dabei:</mark></p>
+<ul>
+<li><p><mark>Warum sind diese für dich besonders relevant oder
+empfehlenswert?</mark></p></li>
+<li><p><mark>Welche Erkenntnis hat sich dabei für dich
+herauskristallisiert?</mark></p></li>
+<li><p><mark>Gab es etwas Überraschendes für dich?</mark></p></li>
+</ul>
+<p><mark>Schritt 2: Teilt eure Erfahrungen (1 Minute je Person) (7
+Min)</mark></p>
+<p><mark>Erkennt ihr Gemeinsamkeiten oder gar einen für euch ganz neuen
+Zugang zum Thema Nachhaltigkeit?</mark></p>
+<p><mark>Haltet eure Ergebnisse in geeigneter Weise fest.<br />
+</mark></p>
+<p><strong>Input: Informationsquelle für deine Lernreise
+Nachhaltigkeit</strong></p>
+<p><mark>Wir, die Autor:innen, haben weder den Anspruch noch die
+Kapazitäten „alles” über Nachhaltigkeit zu wissen oder einen
+Gesamtüberblick zu möglichen Quellen zu haben. Aber so ein bisschen
+Input zu unserem Mindset für diese Lernreise sowie ein paar Basics
+findest du einerseits im <a
+href="#grundlagen"><u>Grundlagenkapite</u></a>l und andererseits in
+unserer <a href="#anhang-literaturliste"><u>Literaturliste</u></a>. Ein
+Teil eurer Expedition ist ja auch, die für euch wesentlichen Quellen zu
+finden, die für euer eigenes Thema oder Anliegen auf dieser Lernreise
+wichtig sind.</mark></p>
+<p><mark><strong>Kata</strong>: In diesem Sinne sucht euch für euch
+einen oder maximal zwei Links aus der <a
+href="#anhang-literaturliste"><u>Literaturliste</u></a> aus und notiert
+euch Anmerkungen oder Fragen, um sie im Anschluss zu besprechen oder
+miteinander zu beantworten.</mark></p>
+<p><strong>Austausch / Reflexion</strong></p>
+<p><mark>Teile die Quellen, die du bisher genutzt hast, um dir eine
+fundierte Meinung / Haltung zu bilden und die für dich spannende
+Möglichkeiten aufzuzeigen, damit man aktiv ins Tun kommt.</mark></p>
+<p><mark>Leitfragen:</mark></p>
+<ul>
+<li><p><mark>Wieso hast du dir heute diese Quellen
+angeschaut?</mark></p></li>
+<li><p><mark>Welche (thematischen) Quellen kannst du
+empfehlen?</mark></p></li>
+<li><p><mark>Wie gehst du (bisher) bei deiner Recherche
+vor?</mark></p></li>
+<li><p><mark>Zu welchen Themen kannst du weitergehende Infos geben oder
+fehlen dir noch Infos / Quellen?</mark></p></li>
+</ul>
+<p><mark>Erweitere mit den anderen gerne die bestehende Übersicht um
+weitere spannende Informationsquellen in Bezug auf eure
+Themen.</mark></p>
+<p><strong>Check-out</strong></p>
+<p><mark>Drei #s zu den Highlights der heutigen Session</mark></p>
+<p><strong>Weiterführende Links:</strong></p>
+<ul>
+<li><p>IDG Toolkit <a
+href="http://www.idg.tools"><u>www.Idg.tools</u></a></p></li>
+<li><p>Climate Fresk - Klima Puzzle<u>: <a
+href="https://klimapuzzle.de/"
+class="uri">https://klimapuzzle.de/</a></u></p></li>
+<li><p>"The Climate Game" der Financial Times <a
+href="https://ig.ft.com/climate-game/"
+class="uri">https://ig.ft.com/climate-game/</a>, allerdings nur für
+Englisch-Sprachige geeignet.</p></li>
+</ul>
+<h2 data-number="3.5"
+id="kata-4-wie-kann-ich-als-einzelperson-ins-tun-kommen"><span
+class="header-section-number">3.5</span> Kata 4: Wie kann ich als
+Einzelperson ins Tun kommen?</h2>
+<p>In dieser Woche geht es darum, wie du selbst als Einzelperson ins Tun
+kommst und das mit möglichst einfachen Mitteln.</p>
+<p>Häufig ist es nicht einfach, mit neuen Aktivitäten zu beginnen. Wenn
+der Anfang erstmal gemacht ist, dann erleben wir aber Wirksamkeit und
+erhalten Energie für die nächsten Schritte. Insofern ist der Fokus
+dieser Woche auf dem Tun. Diese Woche fokussierst du dich darauf,
+Wirksamkeit zu erreichen. Es darf sich dabei auch bewusst erst einmal um
+einen kleinen Hebel handeln.</p>
+<p><strong>Agenda:</strong></p>
+<ul>
+<li><p><strong>Check-in:</strong> Was bist du bereits am Tun <em>(5
+Min)</em></p></li>
+<li><p><strong>Diskussion:</strong> Was macht es für dich einfach /
+schwer? (<em>10 Min)</em></p></li>
+<li><p><strong>Thema:</strong> Grundlagen zu Hand- und Fußabdruck lesen
+<em>(10 Min)</em></p></li>
+<li><p><strong>Kata:</strong> Meinen Handabdruck als Einzelperson
+vergrößern (<em>25 Min</em>)</p></li>
+<li><p><strong>Optionales Kata:</strong> Fussabdruck analysieren &amp;
+reduzieren (<em>0 Min</em>)</p></li>
+<li><p><strong>Was nehme ich mir vor</strong>? (5 Min)</p></li>
+<li><p><strong>Checkout</strong> (<em>5 Min</em>)</p></li>
+</ul>
+<p><strong>Check-In: Ankommen</strong></p>
+<p>Wie bist du heute hier und was tust du bereits?</p>
+<p><strong>Diskussion</strong></p>
+<p>Was macht es für dich einfach, aktiv zu werden? Und was erschwert
+es?</p>
+<blockquote>
+<p><strong>Thema: Grundlagen zu Hand- und Fußabdruck lesen</strong></p>
+</blockquote>
+<p>Zunächst mach dich mit den Inhalten zu <a
+href="#_84dkxcs55m6"><u>Handabdruck</u></a> und <a
+href="#_w8lziy9ffooy"><u>Fußabdruck</u></a> im Grundlagenkapitel
+vertraut.</p>
+<p><strong>Kata: Meinen Handabdruck als Einzelperson mit einfachen
+Mitteln vergrössern</strong></p>
+<p>In dieser Woche geht es darum, dass du eine Aktivität findest, die du
+dir vornimmst, um deinen Handabdruck zu vergrößern. Im Sinne des “ins
+Tun kommen”, wähle etwas aus, was du alleine sofort durchführen kannst.
+Für größere Projekte ist später in der Lernreise Zeit vorgesehen.</p>
+<p><mark>Unseren Handabdruck können wir in unterschiedlichen
+Wirkungskreisen vergrößern. Beginne damit, dir zu überlegen, was
+<u>deine Herzensthemen</u> sind. W</mark>as ist dir wirklich wichtig im
+Leben, was macht dir Freude? Trage sie im <strong>Climate Action
+Canvas</strong> ein.</p>
+<p>Darauf aufbauend, sammle mögliche Ideen für deine Challenge. Notiere
+sie auf dem <strong>Climate Action Canvas</strong> in der
+<u>Ideenecke</u>. Wenn du schon eine aussuchen kannst, dann halte sie
+unter <u>Fokus-Themen</u> fest.</p>
+<p>Wenn dir auf Anhieb nichts einfällt, dann nutze die unten stehende
+Liste als Inspiration. <mark>Für jeden Wirkungskreis findest du hier ein
+bis zwei Ideen. Mehr Inspiration ist unter <a
+href="http://www.daskannstdutun.de"><u>www.daskannstdutun.de</u></a></mark>
+zu finden.</p>
+<p><mark>In dieser Woche ist der Fokus, ins Tun zu kommen. Nimm dir also
+lieber nicht so viel vor, sondern fang klein an und werde
+wirksam!</mark></p>
+<p><mark>Mögliche Handabdruckaktivitäten, die ich als Einzelperson
+einfach und mit wenig Zeitaufwand machen kann:</mark></p>
+<table>
+<colgroup>
+<col style="width: 31%" />
+<col style="width: 68%" />
+</colgroup>
+<tbody>
+<tr>
+<td><mark>Engagement im Umfeld: Freunde, Bekannte,
+Arbeitsplatz</mark></td>
+<td><ul>
+<li><p><mark>Mit anderen über klima-positives Verhalten
+sprechen</mark></p></li>
+<li><p><mark>Leckeres vegetarisches oder veganes Essen
+kochen</mark></p></li>
+<li><p><mark>…</mark></p></li>
+</ul></td>
+</tr>
+<tr>
+<td><mark>Im Beruf</mark></td>
+<td><ul>
+<li><p><mark>Podcast oder Buch zu Klimathemen im Intranet
+empfehlen</mark></p></li>
+<li><p><mark>…</mark></p></li>
+</ul></td>
+</tr>
+<tr>
+<td><mark>Eigenes Verhalten</mark></td>
+<td><ul>
+<li><p><mark>Bei Unternehmen klimafreundliche Produkte
+nachfragen</mark></p></li>
+<li><p><mark>…</mark></p></li>
+</ul></td>
+</tr>
+<tr>
+<td><mark>Politisch aktiv sein</mark></td>
+<td><ul>
+<li><p><mark>Teilnahme an Demonstrationen (Datum in den Kalender
+eintragen)</mark></p></li>
+<li><p><mark>Online-Petitionen unterschreiben</mark></p></li>
+<li><p><mark>…</mark></p></li>
+</ul></td>
+</tr>
+<tr>
+<td><mark>Geld und Finanzen</mark></td>
+<td><ul>
+<li><p><mark>Spenden</mark></p></li>
+<li><p><mark>….</mark></p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Optionale Kata: Fußabdruck analysieren und
+reduzieren</strong></p>
+<p>Es ist eine interessante Kata (Übung), den eigenen <a
+href="#1825vzprz066"><u>Fußabdruck</u></a> zu reflektieren.</p>
+<p>Zum einen, weil es wirklich sinnvolle Möglichkeiten gibt, um ihn zu
+reduzieren. Auf diese Art und Weise können wir auch Vorbildfunktion
+gegenüber unserem direkten Umfeld ausüben.</p>
+<p>Zum anderen kann die Analyse des eigenen Fußabdrucks strukturelle
+Hindernisse beleuchten, die ein klimafreundliches Leben erschweren. Zum
+Beispiel ist Flugkerosin von der Mineralölsteuer befreit und macht das
+Fliegen gegenüber dem Bahnfahren ggf. finanziell attraktiver. Vielleicht
+stößt du durch die Analyse deines Fußabdrucks auf strukturelle
+Hindernisse, die du beseitigen möchtest. Das könnte ein gutes Thema
+sein, um sich mit anderen zu verbinden (siehe Woche <mark>6</mark>).</p>
+<ul>
+<li><p>Berechne deinen Fußabdruck mit <a
+href="https://www.footprintcalculator.org/home/de"><mark><u>https://www.footprintcalculator.org/home/de</u></mark></a>
+oder <a href="https://uba.co2-rechner.de/de_DE/"
+class="uri">https://uba.co2-rechner.de/de_DE/</a></p></li>
+<li><p>Identifiziere Möglichkeiten, ihn zu reduzieren.</p></li>
+<li><p>Gibt es Strukturen, die dir das Reduzieren erleichtern oder eher
+erschweren?</p></li>
+</ul>
+<p><mark>Reflexionsfragen für euren Austausch in der Gruppe:</mark></p>
+<ul>
+<li><p><mark>Was hat dich besonders an deinem Fußabdruck
+überrascht?</mark></p></li>
+<li><p><mark>Was nimmst du dir vor, um deinen Fußabdruck zu
+reduzieren?</mark></p></li>
+<li><p><mark>Welche strukturellen Gegebenheiten findest du besonders
+hinderlich?</mark></p></li>
+</ul>
+<p><strong>Was nehme ich mir vor?</strong></p>
+<p>Teile den anderen mit, welche Handabdruck-Aktivität du dir vornimmst
+und welche “Steps to Action” du planst. Scheibe sie auf das <mark><a
+href="https://miro.com/app/board/uXjVNh9bSsQ=/?moveToWidget=3458764592813154290&amp;cot=14"><u>Climate
+Action Canvas</u></a></mark> “Steps to Action”.</p>
+<p><strong>Check-out</strong></p>
+<p>Wie geht es dir gerade mit deinem Vorhaben?</p>
+<p><strong>Zitat der Woche</strong><img src="./media/image19.png"
+style="width:6.26772in;height:3.31944in" /></p>
+<h2 data-number="3.6"
+id="kata-5-gewohnheiten---im-alltag-aktiv-werden"><span
+class="header-section-number">3.6</span> Kata 5: Gewohnheiten - im
+Alltag aktiv werden</h2>
+<p>In Woche 5 geht es darum, weitere kleine Schritte zu gehen. Hierfür
+wollen wir zunächst verstehen, wie Gewohnheiten funktionieren und wie du
+nachhaltige Gewohnheiten im Sinne des Klimaschutzes etablieren kannst.
+Setze dir anschließend dein persönliches Gewohnheits-Ziel.</p>
+<p><strong>Agenda</strong>:</p>
+<ul>
+<li><p><strong>Check-in:</strong> <em>(5 Min)</em></p></li>
+<li><p><strong>Thema:</strong> Wie funktionieren Gewohnheiten?
+<strong>(</strong><em>5 Min)</em></p></li>
+<li><p><strong>Diskussion:</strong> Tausche dich über eure aktuellen
+*(15 Min)* Nachhaltigkeits-Gewohnheiten aus</p></li>
+<li><p><strong>Kata - Mein Gewohnheits-Ziel -</strong> <em>(5 + 10
+Min)</em><br />
+Setze dir ein Ziel für die nächsten Wochen</p></li>
+<li><p><strong>Check-Out:</strong> Was mache ich ab morgen anders?
+<em>(5 min)</em></p></li>
+<li><p><strong>Bild / Zitat der Woche</strong> und
+<strong>weiterführende Links</strong></p></li>
+</ul>
+<p><strong>Check-In:</strong></p>
+<p>Welche Gewohnheit hast du dir kürzlich angeeignet? (oder
+aufgegeben?)</p>
+<p><strong>Thema (1/2): Wie funktionieren Gewohnheiten?</strong></p>
+<p>Lese gemeinsam mit den anderen den folgenden Text zum<br />
+Thema Gewohnheiten:</p>
+<p>Wir wissen alle, dass unser aktuelles Verhalten schädlich für unseren
+Planeten ist. Es ist nicht das fehlende Wissen, sondern das fehlende
+Handeln, das uns Probleme bereitet. Doch wie können wir unser Verhalten
+wirklich langfristig verändern? Eine Möglichkeit besteht darin, uns mit
+unseren Gewohnheiten auseinanderzusetzen und diese schrittweise
+hinsichtlich mehr Nachhaltigkeit anzupassen. Dadurch können wir unseren
+Fußabdruck minimieren und unseren Handabdruck erhöhen, und zwar in
+kleinen, leicht umsetzbaren Schritten.</p>
+<p>Um das zu tun, sollten wir zunächst verstehen, was Gewohnheiten sind
+und wie sie funktionieren:</p>
+<p>Gewohnheiten machen uns das Leben einfacher. Wenn wir unseren
+Gewohnheiten folgen, dann müssen wir nicht lange nachdenken. Die
+Handlungen laufen automatisch ab. Das kennt jede:r von uns, der / die z.
+B. jeden Tag den gleichen Weg zur Arbeit nimmt. Oft nehmen wir den Weg
+selbst gar nicht mehr richtig wahr und erwischen uns dabei, dass wir uns
+fragen, wie wir eigentlich dorthin gelangt sind. Dass wir Gewohnheiten
+entwickeln, hat einen guten Grund: Unser Gehirn wäre schnell überlastet,
+wenn es alles bewusst tun müsste. Gewohnheiten erleichtern uns das
+Leben, weil sie Energie sparen und das Gehirn effizienter nutzen.</p>
+<p>Auf neuronaler Ebene sind Gewohnheiten besonders starke neuronale
+Verbindungen im Gehirn. Sie sind neuronale “Autobahnen” und sie
+entstehen dadurch, dass sie besonders häufig genutzt werden. Dadurch
+werden die Verbindungen stabiler, und die Gedanken oder Handlungen
+laufen, folgend auf einen bestimmten Auslöser, automatisch ab. Werden
+die Verbindungen nicht mehr so häufig genutzt, werden sie schwächer.
+Neue Gewohnheiten dagegen sind zunächst nur kleine “Trampelpfade” und
+müssen erst zu stabilen Verbindungen “ausgebaut” werden. Werden sie
+nicht (ausreichend) genutzt, verkümmern sie.</p>
+<p><strong>Diskussion</strong></p>
+<p>Tauscht euch darüber aus, wie Gewohnheiten euer Verhalten in Bezug
+auf Nachhaltigkeit und Klimaschutz prägen. Inwiefern habt ihr evtl.
+bereits neue Verhaltensweisen in eurem Alltag verankert? Welche
+Umstellung fiel euch leicht? Was fällt euch bisher noch schwer?</p>
+<p><strong>Thema 2/2: Wie kann ich meine Gewohnheiten effektiv
+verändern?</strong></p>
+<p>Aus eigener Erfahrung wissen die meisten von uns, dass es eine große
+Herausforderung sein kann, positive Gewohnheiten aufzubauen oder uns
+negative Gewohnheiten abzugewöhnen. Wenn wir allerdings ein paar
+Prinzipien befolgen, die James Clear in seinem Buch “die 1%-Methode”
+beschreibt, dann können wir dafür sorgen, dass es wahrscheinlicher wird,
+dass wir unsere Gewohnheitsziele erreichen.</p>
+<p><u>Verbinde dein Ziel mit deiner Identität.</u></p>
+<p>James Clear verwendet hierbei das Beispiel Sport: Statt zu sagen “Ich
+mache regelmäßig Sport”, sollte man sein Ziel so formulieren, dass es
+Teil der eigenen Identität werden kann: “Ich bin sportlich” oder "Ich
+bin Sportler:in”.</p>
+<p>Bezogen auf das Thema Klimaschutz sollte das Ziel nicht heißen: “Ich
+setze mich regelmäßig für Klimaschutz ein” sondern “Ich bin
+Klimaschützer:in”</p>
+<p>Dieses Vorgehen hat den Vorteil, dass wir unserem Ziel so automatisch
+mehr Relevanz zusprechen. Außerdem haben wir alle eine Vorstellung
+davon, was ein:e Klimaschützer:in tut. Wir können uns also einfach nur
+fragen: Was würde ein:e Klimaschützer:in tun? und uns durch die
+entsprechenden Handlungen selbst beweisen, dass wir zu dieser Gruppe
+gehören, auch wenn sich diese Zuschreibung anfangs möglicherweise noch
+etwas ungewohnt anfühlt.</p>
+<p><u>Nutze die “Mechanik” von Gewohnheiten, um dir dein Vorhaben zu
+erleichtern.</u></p>
+<p>Gewohnheiten laufen immer in 4 Phasen ab</p>
+<blockquote>
+<p>Auslöser - Verlangen - Reaktion - Belohnung</p>
+</blockquote>
+<p>Daraus ergeben sich die folgenden Prinzipien, an denen wir uns
+orientieren können, wenn wir eine Verhaltensänderung anstreben: Die neue
+Gewohnheit sollte</p>
+<ol type="1">
+<li><p>offensichtlich</p></li>
+<li><p>attraktiv</p></li>
+<li><p>einfach</p></li>
+<li><p>befriedigend</p></li>
+</ol>
+<blockquote>
+<p>sein bzw. genau das Gegenteil, wenn wir versuchen uns eine Gewohnheit
+abzugewöhnen.</p>
+<p>In der folgenden Darstellung findet ihr Inspiration dazu, wie ihr die
+Prinzipien umsetzen könnt:</p>
+<p><img src="./media/image20.png"
+style="width:5.31119in;height:6.25521in" /></p>
+</blockquote>
+<p><strong>Kata: Setz dir ein Gewohnheitsziel</strong></p>
+<p>Nachdem du verstanden hast, wie Gewohnheiten funktionieren und welche
+“Hacks” dir dabei helfen können, dein Gewohnheitsziel effektiv zu
+verfolgen, ist es an der Zeit, dir dein persönliches Gewohnheitsziel zu
+setzen.</p>
+<p>Nutze die folgende Vorlage, um dein Ziel schriftlich
+festzuhalten.<br />
+Überlege dir, wie du dein eigenes Verhalten nachhaltiger gestalten
+kannst (Fußabdruck), wie du zum nachhaltigen Verhalten anderer beitragen
+kannst (Handabdruck) und/oder wie du informiert bleibst und
+kontinuierlich dazu lernst und damit dein Wissen ausbaust.</p>
+<p>Ziel:<br />
+Wer möchtest du in Zukunft sein?</p>
+<p>Bsp: Ich bin Klimaschützerin</p>
+<p>Kontext:<br />
+Was ist der Auslöser für deine Gewohnheit (Tag, Uhrzeit, Ort, ...)</p>
+<p>Bsp.:</p>
+<ul>
+<li><p>Immer wenn ich zur Arbeit fahre, …</p></li>
+<li><p>Jeden Dienstag um 15h, …</p></li>
+<li><p>Immer wenn ich eine Freundin treffe, die ich lange nicht gesehen
+habe, …</p></li>
+</ul>
+<p>Verhalten:</p>
+<p>Welches nachhaltige Verhalten möchtest du zeigen?</p>
+<ul>
+<li><p>nehme ich das Fahrrad,</p></li>
+<li><p>arbeite ich 1h an meinem Handabdrucks-Projekt</p></li>
+<li><p>frage ich sie nach ihren Gefühlen zum Klimawandel</p></li>
+</ul>
+<p>Review am:<br />
+An welchem Tag möchtest du die Einhaltung deiner neuen Gewohnheit
+überprüfen? Tipp: sucht euch einen gemeinsamen Termin für die Gruppe aus
+oder bildet Tandems und setzt euch einen gemeinsamen Termin zu zweit</p>
+<p><strong>Checkout</strong></p>
+<p>Was mache ich ab morgen anders?</p>
+<p><strong>Zitat der Woche:</strong></p>
+<p>“Wer möchte ich gewesen sein?” Maja Göpel</p>
+<p><strong>Weiterführende Links</strong></p>
+<ul>
+<li><a href="https://zufriedenleben.eu/neue-gewohnheiten/"
+class="uri">https://zufriedenleben.eu/neue-gewohnheiten/</a></li>
+</ul>
+<h2 data-number="3.7" id="kata-6-mein-handabdruck"><span
+class="header-section-number">3.7</span> Kata 6: Mein Handabdruck</h2>
+<p>In Woche 6 geht es darum, euren Hebel zu vergrößern. Hier findest du
+heraus, welches Thema zu dir passt und wählst eine Challenge aus, die
+dich über die kommenden Wochen begleiten wird.</p>
+<p><strong>Die Agenda:</strong></p>
+<ul>
+<li><p><strong>Check-in:</strong> Was bringt mir Energie? <em>(5
+Min)</em></p></li>
+<li><p><strong>Thema:</strong> Auffrischung zum Thema Handabdruck <em>(5
+Min)</em></p></li>
+<li><p><strong>Austausch</strong> <em>(10 Min)</em></p></li>
+<li><p><strong>Kata:</strong> Dein Fokus-Thema für den
+Handabdrucks-Challenge <em>(20 Min)</em></p></li>
+<li><p><strong>Austausch:</strong> Welche Challenge habe ich mir
+ausgesucht? <em>(15 Min)</em></p></li>
+<li><p><strong>Check-out:</strong> <mark>Welche sind meine nächsten
+Schritte, um meine Challenge starten zu können?</mark> <em>(5
+Min)</em></p></li>
+</ul>
+<p><strong>Check-In</strong></p>
+<p><mark>Welche Sache oder Tätigkeit bringt dir Energie und
+Freude?</mark></p>
+<p><strong>Thema: Auffrischung zum Thema Handabdruck</strong></p>
+<p><mark>Was ist noch einmal der</mark> <a
+href="#kix.5t1gse1bbf5h"><u>Handabdruck</u></a>? Mehr dazu findest du im
+hier verlinkten Grundlagenkapitel.</p>
+<p><mark>In Woch</mark>e 4 h<mark>aben wir das Thema bereits
+angesprochen. Trotzdem ist es manchmal etwas schwer zu greifen, wie sich
+Handabdruck und Fußabdruck unterscheiden, daher hier ein paar
+Beispiel-Paare, um den Unterschied noch einmal zu schärfen:</mark></p>
+<p><mark>Fußabdruck: Ich fahre mit dem Fahrrad zur Arbeit oder
+Schule.</mark></p>
+<p><mark>Handabdruck: Ich engagiere mich in einem Radentscheid in meiner
+Stadt.</mark></p>
+<p><mark>Fußabdruck: Ich bringe kaputte Geräte zur Reparatur.</mark></p>
+<p><mark>Handabdruck: Im kommunalen Jugendtreff wird ein
+generationenübergreifendes Repair-Cafe etabliert.</mark></p>
+<p><mark>Fußabdruck: Ich ernähre mich in Zukunft stärker vegetarisch /
+vegan.</mark></p>
+<p><mark>Handabdruck: Ich setze mich für mehr schmackhafte vegetarische
+Gerichte in meiner Mensa ein.</mark></p>
+<p><strong>Austausch</strong></p>
+<p>Welche Erfahrungen habt ihr seit Woche 4 mit eurem Handabdruck
+gemacht?</p>
+<p><strong>Kata: Dein Fokus-Thema für den
+Handabdrucks-Challenge</strong></p>
+<p><mark>Nutze die</mark> <strong>Climate Action Hebelmatrix</strong>
+<mark>und fülle aus:</mark></p>
+<ul>
+<li><p><mark>In welchen Bereichen bist du schon aktiv? Womit verbringst
+du viel Zeit? Wo steckt dein Herz drin?</mark></p></li>
+<li><p><mark>Welche Maßnahmen oder Aktionen fallen dir spontan für
+diesen Bereich ein?</mark></p></li>
+</ul>
+<p><mark>Notiere deine Ideen im <a
+href="https://miro.com/app/board/uXjVNh9bSsQ=/?moveToWidget=3458764592813154290&amp;cot=14"><u>Climate
+Action Canvas</u></a></mark> “Dein Hebel” <mark>. Wenn du viele Ideen
+hast, dann entscheide dich zunächst für eine - es geht nicht um
+Perfektion, sondern darum, ins Tun zu kommen! Trage deine Idee, für die
+du dich entscheidest, bei</mark> “Dein Fokus-Thema”
+ein<mark>.</mark></p>
+<p><mark>Wenn du spontan keine Ideen hast, dann kannst du den
+Handabdrucks-Test auf</mark> <a
+href="https://www.handabdruck.eu/"><u>https://www.handabdruck.eu/</u></a>
+nutzen. Klicke einfach auf den Button “Hier geht’s los”.</p>
+<p><img src="./media/image21.png"
+style="width:5.59449in;height:3.19444in" /></p>
+<p><img src="./media/image22.png"
+style="width:5.59449in;height:3.86111in" /></p>
+<p><strong>Austausch</strong></p>
+<p>Teilt die Entscheidungen bezüglich eures gewählten Themas für eure
+Handabdruck-Challenge.</p>
+<p><strong><mark>Mit wem möchte ich eine Handabdruck-Challenge
+angehen?</mark></strong></p>
+<ul>
+<li><p><mark>In meinem Zirkel?</mark></p></li>
+<li><p><mark>Mit Verwandten oder Freunden, die ein ähnliches Interesse
+haben? Vielleicht tun sie sich schwer zu starten, weil sie alleine
+sind?</mark></p></li>
+<li><p><mark>Gibt es eine Community/ Verband, die ich schon immer
+interessant fand, auf die ich zugehen und mich einem bestehenden
+Vorhaben/ Ziel anschließen möchte ?</mark></p></li>
+</ul>
+<p><mark>Welcher Mehrwert ergibt sich, zusammen mit anderen eine
+Handabdrucks-Challenge durchzuführen?</mark></p>
+<p><mark>In der Gruppe kommt man gemeinsam oft schneller ins Handeln,
+profitiert von den verschiedenen Stärken, Fähigkeiten und Ressourcen und
+erzielt dadurch eine höhere Selbstwirksamkeit.</mark></p>
+<p><strong>Check-out</strong></p>
+<p><mark>Welche sind meine nächsten Schritte, um meine Challenge starten
+zu können? Halte sie auf dem <a
+href="https://miro.com/app/board/uXjVNh9bSsQ=/?moveToWidget=3458764592813154290&amp;cot=14"><u>Climate
+Action Canvas</u></a></mark> “Steps to Action” <mark>fest.</mark></p>
+<p><mark>Solltet ihr diese Woche herausfordernd finden, erlaubt euch
+gerne, diese Woche um eine weitere zu verlängern. Die
+Handabdruckschallenge ist wesentlich für diese Lernreise!</mark></p>
+<p><strong>Zitat der Woche</strong></p>
+<p>“Man sollte nie daran zweifeln, dass eine kleine Gruppe kluger,
+engagierter Bürger die Welt verändern kann. In der Tat ist das der
+einzige Weg, der jemals Erfolg hatte.” – <a
+href="https://de.wikipedia.org/wiki/Margaret_Mead"><u>Margaret
+Mead</u></a></p>
+<p><strong>Weiterführende Links</strong></p>
+<ul>
+<li><p><mark>Literatur: “Hoch die Hände, Klimawende”, Gabriel
+Baunach</mark></p></li>
+<li><p><mark>Weitere Ideen zur Vergrößerung deines Handabdrucks findest
+du auch mit Hilfe des Handel-O-Mat’s: <a
+href="https://www.germanwatch.org/de/handel-o-mat"><u>Ideen zur
+Vergrößerung Deines Handabdrucks gesucht? | Germanwatch
+e.V.</u></a></mark></p></li>
+<li><p><mark>Inspirierende Beispiele findest du auch in den
+Handabdruck-Inspirationskarten von Germanwatch. Sie zeigen die
+strukturverändernden Wirkungen von Handabruck-Maßnahmen
+auf:</mark></p></li>
+</ul>
+<blockquote>
+<p><a
+href="https://www.germanwatch.org/sites/default/files/methode_12_digitales_material.pdf"><mark><u>Methode
+12: Handabdruck-Inspirationskarten (germanwatch.org)</u></mark></a></p>
+</blockquote>
+<h2 data-number="3.8"
+id="kata-7-mein-netzwerk---wie-gewinne-ich-unterstützung"><span
+class="header-section-number">3.8</span> Kata 7: Mein Netzwerk - Wie
+gewinne ich Unterstützung?</h2>
+<p><strong>Die Agenda:</strong></p>
+<ul>
+<li><p><strong>Check-in:</strong> Welche neuen Verbindungen haben sich
+aufgetan? <em>(5 Min)</em></p></li>
+<li><p><strong>Grundlagen:</strong> Die Kraft des eigenen Netzwerks
+verstehen und<br />
+zugänglich machen <em>(5 Min)</em></p></li>
+<li><p><strong>Kata:</strong> Erstelle eine Verbindungsliste <em>(30
+Min)</em></p></li>
+<li><p><strong>Austausch:</strong> Nutze deinen Zirkel <em>(15
+Min)</em></p></li>
+<li><p><strong>Check-out:</strong> Was plane ich für die nächste Woche
+<em>(5 Min)</em></p></li>
+</ul>
+<p><strong>Check-In: Ankommen <em>(5 Min)</em></strong></p>
+<p>Welche neuen Verbindungen haben sich dir in den letzten Wochen
+aufgetan?</p>
+<p><strong>Grundlagen: Die Kraft des eigenen Netzwerks verstehen und
+zugänglich machen</strong> <em>(5 Min)</em></p>
+<p>Probleme alleine zu lösen, das ist oft eine Herausforderung. Doch im
+gemeinsamen Netzwerk finden wir die Kraft, unsere Wirkung für den
+Klimaschutz zu maximieren.</p>
+<p>In deinem Umfeld gibt es sicherlich bereits viele Menschen, die
+bereit sind, dir zur Seite zu stehen. Und bedenke, dass diese Menschen
+in deinem Netzwerk wiederum Kontakte zu anderen haben, die deinem
+Vorhaben förderlich sein könnten. Wenn ihr alle dasselbe Ziel verfolgt,
+dann wird es nicht mehr "dein" Vorhaben sein, sondern "unser"
+Vorhaben.</p>
+<p>Du kannst sogar Menschen in dein Netzwerk aufnehmen, die du noch gar
+nicht kennst. Es existieren zahlreiche Initiativen, denen du dich
+anschließen oder die über die Expertise verfügen, die du für dein
+Handabdruck-Projekt benötigst. Der entscheidende Anfang besteht darin,
+dein Netzwerk sichtbar zu machen.</p>
+<p><strong>Kata: Erstelle eine Übersicht deines
+Verbindungs-Netzwerk</strong></p>
+<p>Bei der Übersicht (Arbeitsblatt siehe unten) erstellst du eine
+Übersicht von Menschen, mit denen du bereits verbunden bist oder dich
+noch verbinden möchtest. Die Verbundenheit zu diesen Menschen wird dir
+ermöglichen, dass sie dich in deiner Challenge unterstützen können.
+Diese Kata kannst du immer wiederholen, wenn du einen neue Challenge
+oder ein neues Projekt in Angriff nimmst.</p>
+<p>Hier sind ein paar Leitfragen, die dir helfen zu verstehen wer alles
+in deine Verbindungsliste gehören könnte:</p>
+<ul>
+<li><p>Wo brauchst du Unterstützung?</p></li>
+<li><p>Wo habe ich bereits Verbindungen zu Menschen, die sich auch dafür
+interessieren könnten? (Familie &amp; Freund:innen, Nachbarschaft,
+Vereinsmitglieder, Kolleg:innen, …)</p></li>
+<li><p>Welche Personen haben die Expertise/ das Netzwerk, das ich
+brauche?<br />
+Auch wenn ich sie noch nicht kenne? (Initiativen, NGOs, Communities,
+Berufsverbände, Gesellschaft; lokal, landesweit, bundesweit,
+global)</p></li>
+</ul>
+<p>Für ein bisschen mehr Details und “Ordnung” kannst du deine Übersicht
+auch der nachfolgenden Verbindungsliste erweitern und ergänzen durch</p>
+<ul>
+<li><p>Internet-Recherche</p></li>
+<li><p>Gespräche in deinem Umfeld führen</p></li>
+<li><p>einen Post auf Social Media schreiben</p></li>
+<li><p>…</p></li>
+</ul>
+<p><strong>Erstelle eine Verbindungsliste mit 10 Namen:</strong></p>
+<p>(oder mit der Funktion, wenn du die Namen noch nicht kennst)</p>
+<table style="width:97%;">
+<colgroup>
+<col style="width: 48%" />
+<col style="width: 48%" />
+</colgroup>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Name/ Funktion</strong></td>
+<td style="text-align: left;"><strong>Welche Art von Unterstützung ich
+mir wünsche</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">Kann der Name einer Person sein, oder auch
+“jemand der sich mit Thema X auskennt”</td>
+<td style="text-align: left;">Expertise, Einfluss, Sichtbarkeit, Input,
+Spenden, Arbeitskraft, Arbeitsmaterialien, …</td>
+</tr>
+</tbody>
+</table>
+<p>Notiere die wichtigsten Unterstützer im <strong>Climate Action
+Canvas</strong> im Abschnitt rechts unten “<u>Dein
+Support-System</u>".</p>
+<p><strong>Optionale Vertiefung</strong></p>
+<p>Wenn du noch ein bisschen tiefer bohren willst, berücksichtige dabei
+Wichtigkeit und Einfluss der Personen. Das Arbeitsblatt “Mein
+Verbindungs-Netzwerk” bietet dafür Unterstützung.</p>
+<p><img src="./media/image23.jpg"
+style="width:5.39448in;height:4.08936in" /></p>
+<p><strong>Austausch: Nutze deinen Zirkel <em>(15 Min)</em></strong></p>
+<p>Stellt alle reihum eure Zirkel Verbindungslisten vor. Wenn du den
+anderen zuhörst, überlege, welche Personen du kennst, die das gerade
+vorstellende Zirkel Mitglied mit seinem Vorhaben unterstützen könnten.
+Sprecht dann darüber, wie du den Kontakt herstellen kannst.</p>
+<p><strong>Check-out <em>(5 Min)</em></strong></p>
+<p>Mit wem auf deiner Beziehungsliste möchtest du als erstes in
+Verbindung gehen?</p>
+<p><strong>Zitat der Woche:</strong></p>
+<p>“Die erfolgreichsten Networker, die ich kenne, die große Mengen an
+Empfehlungen bekommen und wahrhaft glücklich mit sich sind, stellen die
+Bedürfnisse der anderen Person konsequent über ihre eigenen." Bob
+Burg</p>
+<h2 data-number="3.9"
+id="kata-8-inner-development-goals---wie-setze-ich-meine-fähigkeiten-für-die-gemeinschaft-ein"><span
+class="header-section-number">3.9</span> Kata 8: Inner Development Goals
+- Wie setze ich meine Fähigkeiten für die Gemeinschaft ein?</h2>
+<p>Nachdem du dich in den ersten sieben Wochen mit deinem Wirken in der
+Außenwelt beschäftigt hast, wirst du in dieser Woche den Fokus auf deine
+Innenwelt legen. Dabei lernst, welche Fähigkeit du hast, die du für die
+Gemeinschaft einsetzen, um einen Beitrag für eine nachhaltige
+Entwicklung leisten kannst. Die Energie, die in der Zusammenarbeit in
+einer Gruppe entsteht, ist nicht nur die Addition der Energie der
+einzelnen; durch das gegenseitige Inspirieren, voneinander Lernen und
+miteinander ein Ziel verfolgen, hat man einen enormen Hebel in der Hand
+und das “Zusammenwirken” kann regelrecht beflügeln.</p>
+<p>In der aktuellen Woche geht es um die Inner Development Goals, kurz
+IDGs. Während die SGDs sich von außen an uns Menschen richten, richten
+sich die IDGs an unser Inneres und wirken von innen nach außen. Ziel der
+IDG-Bewegung ist, durch das Training der IDGs die Menschen zu befähigen,
+dass die SDGs erreicht werden können.</p>
+<p>Wieso ist dies notwendig? Es gibt zahlreiche wissenschaftliche
+Belege, die den Handlungsbedarf aufzeigen, warum wir die SDGs erreichen
+müssen, um eine lebenswerte Zukunft zu haben. Und es gibt bereits
+zahlreiche Lösungen, wie die Ziele erreicht werden können. Jedoch ist
+der Fortschritt im Handeln zum Erreichen der SDGs sehr gering im
+Vergleich zu dem, was notwendig ist.</p>
+<p>Warum? Es fehlt uns an der inneren Fähigkeit, mit unserer zunehmend
+komplexen Umwelt und ihren Herausforderungen umzugehen. Glücklicherweise
+zeigt die Forschung inzwischen, dass wir die inneren Fähigkeiten
+entwickeln können. Die IDGs sind der größtmögliche Beschleuniger, um die
+Ziele für nachhaltige Entwicklung zu erreichen und eine gute Zukunft für
+die gesamte Menschheit zu schaffen.</p>
+<p>Die Agenda:</p>
+<ul>
+<li><p><strong>Check-in:</strong> Ankommen <em>(5 Min)</em></p></li>
+<li><p><strong>Kata</strong>: Deine Stärken in den Inner Development
+Goals <em>(20 Min)</em></p></li>
+<li><p><strong>Austausch</strong> <em>(25 Min)</em></p></li>
+<li><p><strong>Check-out:</strong> Mit welcher Fähigkeit (Stärke)
+unterstützt du andere? <em>(10 Min)</em></p></li>
+</ul>
+<p><strong>Check-In: Ankommen (5 Min)</strong></p>
+<p>Wie nehme ich mein Zirkel-Mitglied rechts neben mir heute wahr?</p>
+<p><strong>Kata: Deine Stärken in den Inner Development Goals IDGs
+<em>(20 Min)</em></strong></p>
+<p>Die IDG Initiative hat ein Rahmenwerk aus 5 Dimensionen mit 23
+Fähigkeiten entwickelt. Du findest sie auf dieser [Webseite]
+(https://innerdevelopmentgoals.org/guide/)</p>
+<p>1. Wo in diesem Rahmenwerk findest du deine Stärken wieder? Was davon
+liegt dir am ehesten?</p>
+<p>Nutze das folgende Arbeitsblatt (nächste Seiten) und schätze dich
+selbst auf einer Skala von 1 - 4 ein, wie gut du jeweils darin bist.
+Zeigt sich dabei ein Fokus in einer der Kategorien?</p>
+<p><strong>Skala</strong></p>
+<p>1 = liegt mir überhaupt nicht</p>
+<p>2 = ich verstehe die Fähigkeit, schaffe es jedoch sie regelmäßig
+umzusetzen/auszuüben</p>
+<p>3 = Ich fühle mich wohl damit und übe mich darin noch wirksamer zu
+werden</p>
+<p>4 = fällt mir leicht und übe ich im Alltag regelmäßig aus</p>
+<p>Trage im <strong>Climate Action Canvas</strong> deine Stärken unter
+“Deine Stärken” ein.</p>
+<p>2. Reflektiere für dich, wie du mit deinen Stärken innerhalb der IDGs
+ins Handeln / Wirken mit anderen kommen kannst. Oder andere zum Handeln
+befähigen kannst, um für den Klimaschutz beizutragen. Dies können
+Mitglieder aus deinem Zirkel sein, Familienmitglieder, Freunde,
+Kollegen, …</p>
+<h3 data-number="3.9.1" id="section-1"><span
+class="header-section-number">3.9.1</span> </h3>
+<p><strong>Austausch <em>(25 Min)</em></strong></p>
+<p>Stelle deine IDG-Stärken / -Fokus deinen Mitstreiter:innen vor und
+tausche dich mit ihnen aus, wie ihr eure Stärken in eurer
+Handabdrucks-Challenge einbringen könnt.</p>
+<p><strong>Check-out <em>(5 Min überlegen + 5 Min
+Vorstellung)</em></strong></p>
+<p>Wie und mit welcher Fähigkeit (Stärke) unterstützt du andere in
+deiner Challenge?</p>
+<p><strong>Zitat der Woche:</strong></p>
+<p>"Der größte “zwischenmenschliche Skill" ist ein hoch ausgeprägtes und
+ehrliches Interesse an der anderen Person.", Bob Burg</p>
+<p><strong>Weiterführende Links:</strong></p>
+<ul>
+<li><p><a href="https://idg.tools/de/framework">IDG Toolkit auf
+Deutsch</a> -</p></li>
+<li><p>Was sind die IDGs? Wo kommen Sie her und was wollen sie
+bezwecken? <a href="https://www.innerdevelopmentgoals.org/">IDG Webseite
+auf Englisch</a> -</p></li>
+<li><p><a
+href="https://docs.google.com/forms/d/e/1FAIpQLSdumnYYzSY234QNgjiCR5ZCYKrFAe68KxqKUC4l2LpWoZn2Tg/viewform">Selbstassessment
+der IDG Ziele</a></p></li>
+<li><p><a
+href="https://static1.squarespace.com/static/600d80b3387b98582a60354a/t/61aa2f96dfd3fb39c4fc4283/1638543258249/211201_IDG_Report_Full.pdf">Der
+vollständige Bericht zu den IDGs Skills &amp; Qualitites</a></p></li>
+<li><p>Das IDG Toolkit - Suche dir eine Kata (Übung) zu einer IDG
+Fähigkeit und trainiere diese: <a href="https://idg.tools/">Das IDG
+Toolkit</a> (englisch)</p></li>
+<li><p>Die 29k App - kostenlose App für psychische Gesundheit und innere
+Entwicklung innerhalb einer sich gegenseitig unterstützenden Community
+<a href="https://29k.org/">https://29k.org/</a> (englisch)</p></li>
+</ul>
+<h2 data-number="3.10"
+id="kata-9-mein-thema-challenge-nach-vorne-bringen"><span
+class="header-section-number">3.10</span> Kata 9: Mein Thema/ Challenge
+nach vorne bringen</h2>
+<p><strong>Die Agenda:</strong></p>
+<ul>
+<li><p><strong>Check-in:</strong> Dein Challenge als Bild <em>(5
+Min)</em></p></li>
+<li><p><strong>Austausch / Reflexion:</strong> <em>(10 Min)</em>**** Wo
+stehst du bei deiner Challenge?</p></li>
+<li><p><strong>Kata:</strong> Wise Crowds Gegenseitige Hilfestellung zum
+Durchstarten<br />
+<em>(10 Min lesen und pro Runde 15 Min)</em></p></li>
+<li><p><strong>Check-out:</strong> Wie gehe ich aus der gegenseitigen
+Beratung <em>(5 Min)</em></p></li>
+<li><p><strong>Weiterführende Links</strong></p></li>
+</ul>
+<p><strong>Check-In: Ankommen <em>(5 Min)</em></strong></p>
+<p>Wie bist du heute hier?</p>
+<p>Wenn deine Challenge ein Bild wäre, was wäre darauf zu sehen?</p>
+<p><strong>Reflexion und Austausch <em>(10 Min)</em></strong></p>
+<p>Wo stehst du bei deiner Challenge? Jede:r macht eine stille Retro (5
+Min) zu</p>
+<table style="width:99%;">
+<colgroup>
+<col style="width: 31%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr>
+<td><p><strong>Start</strong></p>
+<p>(Was möchtest du ab sofort anfangen?)</p></td>
+<td><p><strong>Stop</strong></p>
+<p>(Womit möchtest du aufhören?)</p></td>
+<td><p><strong>Continue</strong></p>
+<p>(Was möchtest du beibehalten)</p></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>und teile kurz deine Erkenntnisse mit den anderen.</p>
+<p><strong>Kata: Gegenseitige Hilfestellung zum Durchstarten<br />
+<em>(10 Min und 15 Min für jede Person)</em></strong></p>
+<p>Wahrscheinlich gibt es mindestens eine Person unter euch, die mit
+ihrer Challenge noch nicht so durchgestartet ist, wie sie es sich
+gewünscht hätte.</p>
+<p>Probiert die Methode “Wise Crowds” aus, um euch gegenseitig Tipps und
+Ideen zu geben für die nächsten Schritte. (Die Methode ist hier länger
+beschrieben: <a
+href="https://liberatingstructures.de/liberating-structures-menue/wise-crowds/"><u>Link</u></a>
+auf der Website von Liberating Structures). In dieser Struktur fragt
+eine Person um Rat (hier genannt “Klient:in”) und erhält Anregungen,
+Ideen und Ratschläge von den anderen (hier genannt “Berater:innen).</p>
+<p>Der Ablauf:</p>
+<p>Jede Person bekommt für ihre Beratung 15 Min, die sich folgendermaßen
+gliedern:</p>
+<ul>
+<li><p>Klient:in beschreibt die Herausforderung und bittet um Hilfe. (2
+Min)</p></li>
+<li><p>Berater:innen fragen nach, um die Herausforderung zu verstehen.
+(3 Min)</p></li>
+<li><p>Klient:in dreht den Berater:innen den Rücken zu und macht sich
+bereit, Notizen zu machen (bzw. online: macht die Kamera aus)</p></li>
+<li><p>Währenddessen geben die Berater:innen als Team Empfehlungen,
+Ideen, teilen Erfahrungen (8 Min)</p></li>
+<li><p>Klient:in dreht sich wieder zurück und nennt eine Idee für
+nächste Schritte, die durch die Berater:innen angeregt wurde. (2
+Min)</p></li>
+</ul>
+<p><strong>Tipps:</strong></p>
+<ul>
+<li><p>Eine Person achtet auf die Zeit, sie kann dabei auch Berater: in
+sein, aber nicht Klient:in</p></li>
+<li><p>Bei den Nachfragen darauf achten, dass es tatsächlich
+Verständnisfragen sind und nicht schon verdeckte Empfehlungen</p></li>
+<li><p>Die Berater:innen wechseln sich während der 8 Min Beratungszeit
+ab in ihren Wortmeldungen. Bringt eure diversen Perspektiven
+ein!</p></li>
+<li><p>Die Berater:innen achten darauf, dass ihre Empfehlungen und Ideen
+als Anregungen offeriert werden - vermeidet jeden Hauch von
+Besserwisserei!</p></li>
+</ul>
+<p>In der Kürze der Beratungszeit kommen erfahrungsgemäß viele gute
+Anregungen. Einige werden nicht ganz passen. Gegebenenfalls lohnt es
+sich, bestimmte Ideen durch weiteren Dialog zu vertiefen.</p>
+<p><strong>Check-out <em>(5 Min)</em></strong></p>
+<p>Wie gehst du aus der gegenseitigen Beratung, was nimmst du mit?</p>
+<p><strong>Zitat der Woche</strong></p>
+<p>“Man muss sich gegenseitig helfen, das ist ein Naturgesetz.”, Jean de
+La Fontaine</p>
+<h2 data-number="3.11"
+id="kata-10-kommuniziere-über-dein-themadeine-challenge"><span
+class="header-section-number">3.11</span> Kata 10: Kommuniziere über
+dein Thema/deine Challenge</h2>
+<p><strong>Die Agenda:</strong></p>
+<ul>
+<li><p><strong>Check-in:</strong> Wie kannst du von etwas Neuem
+überzeugt werden?<em>(5 Min)</em></p></li>
+<li><p><strong>Kata:</strong> Stelle deine Kommunikationspotentiale
+zusammen <em>(20 Min)</em></p></li>
+<li><p><strong>Austausch</strong>: Stellt euch nacheinander euer Konzept
+vor und gebt euch Tipps wo ihr die Beträge noch nachschärfen könnt -
+jeweils 2 min Vorstellen und 4min Feedback geben <em>(30
+Min)</em></p></li>
+<li><p><strong>Check-out:</strong> <em>(5 Min)</em> Welches ist deine
+heutige AHA-Erkenntnis und auf welchem Kommunikationskanal wirst du
+deinen Beitrag veröffentlichen?</p></li>
+<li><p><strong>Weiterführende Links</strong></p></li>
+</ul>
+<p><strong>Check-In: Ankommen <em>(5 Min)</em></strong></p>
+<p>Wie kannst du von etwas Neuem überzeugt werden</p>
+<p><strong>KATA: Wie kannst du durch Kommunikation die Umsetzung deines
+Themas unterstützen?</strong></p>
+<p>Wenn du an dein Thema/ deine Challenge denkst: Wie viele Menschen
+kannst du dadurch beeinflussen?</p>
+<ul>
+<li><p>Bei welchem Anlass kannst du Menschen aus deinem sozialen
+Netzwerk dazu erreichen?</p>
+<ul>
+<li><p>bei persönlichen Treffen</p></li>
+<li><p>virtuell</p></li>
+</ul></li>
+<li><p>Wie kannst du dafür sorgen, dass du gehört und ernst genommen
+wirst?</p></li>
+<li><p>Wie kannst du dabei eventuell Mitstreitende gewinnen?</p></li>
+</ul>
+<p>Nimm dir mindestens eine konkrete Aktivität zur Kommunikation vor.
+Anregungen aus dem <a
+href="#kommunikation-über-das-klima"><u>Grundlagenkapitel</u></a> können
+dabei hilfreich sein.</p>
+<p><strong>Austausch</strong></p>
+<p>Stellt euch nacheinander eure geplante Aktivität vor und gebt euch
+Tipps wie ihr die Vorhaben noch wirksamer machen könnt<br />
+- jeweils 2 min Vorstellen und 4min Feedback geben</p>
+<p><strong>Check-out</strong></p>
+<p>Welches ist deine heutige AHA-Erkenntnis und welchen
+Kommunikationskanal wirst du nutzen?</p>
+<p><strong>Zitat der Woche</strong></p>
+<p>“Der wichtigste Grundsatz für jede wirksame Kommunikation ist, die
+Menschen dort abzuholen, wo sie sind. Und, um in Sachen Klima wirksam zu
+sein, müssen wir erkennen, dass die meisten Menschen nicht viel
+wissen.”</p>
+<p>Quelle: <a
+href="https://potentialenergycoalition.org/wp-content/uploads/2024/01/Talk-Like-a-Human.pdf"><u>Talk
+like a Human</u></a></p>
+<p><strong>Anmerkung zu Woche 11:</strong></p>
+<p>Lies dir die Kata zu Woche 11 vorab durch. Es könnte sinnvoll sein,
+dass ihr die Kata vorab eures Zirkel-Treffens durchführt. So lässt sie
+sich am besten in euren Alltag einbauen. Einigt euch zusammen, ob ihr
+sie vor oder in euer “Lernreise-Stunde” durchführt.</p>
+<p><strong>Weiterführende Links:</strong></p>
+<ul>
+<li><p>Podcast Psychologists for Future: <a
+href="https://klimaimkopf.podigee.io/16-klimakommunikation-teil-1"><u>Klimakommunikation</u></a>
+Teil 1 und 2</p></li>
+<li><p>Podcast G. Baunach (für Kommunikationsprofis)</p></li>
+<li><p><a
+href="https://allianz-entwicklung-klima.de/informieren/klimaschutz-navigator/kommunizieren/grundlagen-klimakommunikaton/"><u>https://allianz-entwicklung-klima.de/informieren/klimaschutz-navigator/kommunizieren/grundlagen-klimakommunikaton/</u></a>
+(auch für privatpersonen?)</p></li>
+<li><p><a
+href="https://www.umweltbundesamt.de/erfolgsrezepte-einer-wirksamen-klimaschutz"><u>https://www.umweltbundesamt.de/erfolgsrezepte-einer-wirksamen-klimaschutz</u></a></p></li>
+<li><p>Übers Klima reden: Wie Deutschland beim Klimaschutz tickt.
+Wegweiser für den Dialog in einer vielfältigen Gesellschaft, <a
+href="https://climateoutreach.org/uebers-klima-reden/"><u>https://climateoutreach.org/uebers-klima-reden/</u></a></p></li>
+<li><p>Ten Key Principles: How to Communicate Climate Change for
+Effective Public Engagement, <a
+href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4151465"><u>https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4151465</u></a></p></li>
+</ul>
+<h2 data-number="3.12"
+id="kata-11-lass-dich-von-der-natur-inspirieren"><span
+class="header-section-number">3.12</span> Kata 11: Lass dich von der
+Natur inspirieren</h2>
+<p><strong>Die Agenda:</strong></p>
+<ul>
+<li><p><strong>Check-in:</strong> <em>Welche Bedeutung hat die Natur für
+dich? (5 Min)</em></p></li>
+<li><p><strong>Kata</strong>: Mache einen Genussspaziergang <em>(15
+Min)</em></p></li>
+<li><p><strong>Austausch:</strong> Tausche dich zu den Antworten, die du
+von der Natur auf dem Spaziergang erhalten hast, aus <em>(30
+Min)</em></p></li>
+<li><p><strong>Check-out:</strong> <em>Welches war dein heutiger
+Schlüsselmoment? (5 Min)</em></p></li>
+<li><p><strong>Weiterführende Links</strong></p></li>
+</ul>
+<p><strong>Check-in (5min)</strong></p>
+<p>Welche Bedeutung hat die Natur für dich?</p>
+<p><strong>Kata: Mache einen Genussspaziergang (15min)</strong></p>
+<p>Bei einem „Genussspaziergang” geht es darum, ganz im Moment zu sein,
+die Natur zu genießen und auf möglichst viele Details zu achten. Dabei
+kannst du jeden deiner Wege zu einem Genussspaziergang machen und dich
+dabei auf das Schöne und Positive fokussieren. Idealerweise machst du
+diesen Genussspaziergang an einem Ort, der ruhig und in der Natur ist
+(Wald, Park, Baumallee, Garten, …)</p>
+<p>Was brauchst du für einen Genussspaziergang?</p>
+<ul>
+<li><p>15 Minuten Zeit – gerne auch länger wenn du Zeit hast,
+Hauptsache, Du gehst ohne Zeitdruck</p></li>
+<li><p>dem Wetter entsprechende Kleidung und Schuhe</p></li>
+<li><p>Impulsfrage(n)</p></li>
+</ul>
+<p>Optional zur Dokumentation:</p>
+<ul>
+<li><p>eine Kamera (das kann auch Deine Handykamera sein)</p></li>
+<li><p>wenn du lieber schreibst oder zeichnest – Stift und
+Papier</p></li>
+<li><p>oder ein Audioaufnahmegerät (z.B. Diktierfunktion deines
+Handys)</p></li>
+</ul>
+<p>Beim Genussspaziergang geht es auch darum, die schönen und positiven
+Dinge, die siehst und erlebst, zu „verankern”. Auf diese Weise kannst du
+diese positiven Erlebnisse und Emotionen später leichter nachfühlen. Zum
+Beispiel, wenn du in deiner Lernreise an einem Punkt bist, wo du nicht
+weiterkommst, oder in einer Situation, in denen deine Klimagefühle dich
+zu sehr einnehmen und du positive Energie brauchst, um dich aufzutanken
+und, um wieder einen “klaren Blick” zu bekommen. Dein Gehirn kann
+nämlich nicht unterscheiden, ob Du das gerade wirklich erlebst, oder du
+es in Gedanken nacherlebst.</p>
+<p>Wie machst du einen Genussspaziergang?</p>
+<ol type="1">
+<li><p>Suche Dir eine Strecke aus, die Du gut ohne Zeitdruck zurücklegen
+kannst. Das kann auch Dein Heimweg sein (vielleicht nimmst Du erst den
+nächsten Bus? Oder gehst noch eine Runde, bevor Du mit dem Auto nach
+Hause fährst?). Bestmöglich führt Dich dieser Weg durch eine natürliche,
+grüne Umgebung. Ob Du den Weg bereits kennst oder ob er Dir neu ist,
+spielt keine Rolle. Es geht dabei nicht darum, eine möglichst lange
+Strecke zu laufen, sondern genau zu beobachten und den Moment zu
+genießen.</p></li>
+<li><p>Suche dir auf deinem Weg eine Schwelle aus, ab der du ganz
+bewusst gehst und deine Umgebung wahrnimmst. Dies kann eine Brücke sein
+oder wo ein großer Baum steht. Bleibe davor stehen, schließe deine Augen
+und nimm deine Umgebung wahr. Was hörst du? Was fühlst du? Was riechst
+du? Nimm deinen Körper bewusst wahr, wie du mit beiden Füßen fest auf
+dem Boden stehst. Atme tief ein und aus und komme ganz bei Dir an. Dann
+öffne deine Augen und starte deinen Genussspaziergang. Gehe langsamer,
+als Du es sonst tust. Deine Impulsfrage im Kopf, achte ganz bewusst auf
+das, was du auf dem Weg wahrnimmst. Geräusche und Gerüche, die Dich
+umgeben, Farben und Formen von Pflanzen am Wegesrand, den Wind auf
+Deiner Haut, die Sonne, die Dich wärmt, den Boden unter Deinen Füßen…
+Suche bewusst nach schönen Details und positiven Eindrücken. Sammle so
+viele wie möglich davon. Sei ganz im Moment und genieße die Lebendigkeit
+und Schönheit. Wenn Deine Gedanken abschweifen sollten, konzentriere
+Dich einfach wieder auf Deine Umgebung und auf den Moment. Dein Atem
+kann immer wieder Dein Anker sein.</p></li>
+<li><p>Nehme ganz bewusst möglichst viele schöne Momente und Eindrücke
+wahr. Und erfreue Dich an deiner Entdeckertour. Werde zum
+leidenschaftlichen Sammler schöner, positiver Eindrücke.</p></li>
+</ol>
+<p>Impulsfragen</p>
+<p>Deine Impulsfragen richten sich nach deinem aktuellen Bedarf. Deshalb
+überlege, wo in deiner Lernreise du Unterstützung brauchst. Was fehlt
+dir?</p>
+<p>Du kannst dir eine Impulsfrage zu deiner Challenge überlegen. Z.B.
+Was teilt die Natur mir über meine Challenge mit? Welche neue
+Perspektive zeigt sie mir auf? Welche Idee vermittelt sie mir über meine
+aktuelle Herausforderung?</p>
+<p>Oder, wenn du gerade nicht voran kommst: Welche Impulse gibt mir die
+Natur zu diesen Fragen: Wie kann ich meine Ressourcen stärken? Wie kann
+ich dran bleiben? Wie kann ich Energie tanken? Was gibt mir Energie um
+dranzubleiben?</p>
+<p>Die Dinge, die man in der Natur sieht, sind Metapher für das, was man
+braucht. Dabei zählt der erste Impuls, der kommt, damit uns die
+Intuition und nicht der Verstand führt.</p>
+<p>z.B. "kahle Bäume und Sträucher" --&gt; Rückzug, Sichtbarkeit der
+Wurzel, Stämme, Äste = Essenz --&gt; Was ist meine Essenz? Bedürfnis
+nach Rückzug "Sich zersetzende Blätter" --&gt; nähren den Boden,
+Bedürfnis nach Regeneration, Erneuerung<br />
+"Vogel, der mühelos fliegt" --&gt; Bedürfnis nach Leichtigkeit</p>
+<p><strong>Austausch nach dem Genussspaziergang (30min)</strong></p>
+<ol type="1">
+<li><p>Eine Person nennt ihre Impulsfrage(n) und erzählt, welche
+“Antworten” sie von der Natur erhalten hat.</p></li>
+<li><p>Die anderen hören aktiv zu und teilen danach nacheinander, welche
+Assoziationen sie beim Zuhören bekommen haben;</p></li>
+<li><p>Danach werden die Rollen getauscht, bis jeder seine Impulse aus
+der Natur geteilt und Rückmeldung von den anderen erhalten hat.</p></li>
+<li><p>2min Erzählen + 1 min Feedback p.P.</p></li>
+</ol>
+<p>Optional nach dem Austausch:</p>
+<p>Fasse deine Erlebnisse deines Genussspaziergangs und das Feedback
+deines Lernzirkels zusammen. Das kann eine Collage aus deinen Fotos oder
+Zeichnungen sein, oder du schreibst dir alles einfach auf – Hauptsache,
+Du erlebst den Genussspaziergang für Dich nochmal ganz bewusst nach und
+kannst die positiven Eindrücke „verinnerlichen”.</p>
+<p><strong>Check-out (5min)</strong></p>
+<p>Welches war dein heutiger Schlüsselmoment?</p>
+<p><strong>Zitat der Woche</strong></p>
+<p>“Die Natur ist die größte Kraft, um aktive Gedanken hervorzubringen.”
+– Søren Kierkegaard</p>
+<h2 data-number="3.13"
+id="kata-12-meine-vision---abschluss-und-ausblick"><span
+class="header-section-number">3.13</span> Kata 12: Meine Vision -
+Abschluss und Ausblick</h2>
+<p><strong>Die Agenda:</strong></p>
+<ul>
+<li><p><strong>Check-in:</strong> Wie fühlst du dich in der letzten
+Woche? <em>(5 Min)</em></p></li>
+<li><p><strong>Kata:</strong> Appreciative Interview <em>(30
+Min)</em></p></li>
+<li><p><strong>Kata:</strong> Zukunftsmail <em>(5 Min)</em></p></li>
+<li><p><strong>Check-out:</strong> Wie fühle ich mich? <em>(10
+Min)</em></p></li>
+<li><p><strong>Weiterführende Links</strong></p></li>
+</ul>
+<p><strong>Check-In: Ankommen <em>(5 Min)</em></strong></p>
+<p>Die letzte Woche! Schon da? Endlich? Was jetzt?</p>
+<p>Tausche dich kurz darüber aus, wie es dir jetzt geht, was du denkst
+und was du fühlst</p>
+<p>Was geht dir durch den Kopf, wenn du an die kommenden Wochen und
+Monate denkt? Welche Pläne hast du, Begonnenes weiterzuverfolgen oder
+Neues zu starten?</p>
+<p><strong>Kata: Appreciative Interview (40 Min)</strong></p>
+<p>In den letzten 12 Wochen (3 Monate!, ein Vierteljahr!) hast du und
+deine Zirkel-Kolleg:innen viel Zeit mit den Inhalten und Fragen dieses
+Leitfadens verbracht.<br />
+Blicke zusammen mit den anderen mit Wertschätzung darauf zurück.</p>
+<p>Nutze dafür 3 Schritte.</p>
+<ol type="1">
+<li>Frage dich:<br />
+Wie zufrieden bin ich mit meinem Weg? Wie hat sich mein Vorhaben
+entwickelt? Welche Erfolge habe ich erzielt? Was habe ich erreicht? Wie
+hat die Gruppe mich unterstützt? Haben mich die letzten Wochen in meiner
+Selbstwirksamkeit bestärkt (vergleiche mit Woche 1)?</li>
+</ol>
+<blockquote>
+<p>Überlege auch:<br />
+Welche Hindernisse musste ich dafür überwinden? Was hat diese Erfolge
+möglich gemacht? Was habe ich dafür getan? Wie zufrieden bin ich mit
+meinem Umgang mit den Hindernissen? Was brauche ich jetzt noch, um
+dranzubleiben?</p>
+<p>Notiere dir deine und die jeweiligen Gedanken der anderen. (5
+Min)</p>
+</blockquote>
+<ol start="2" type="1">
+<li>Berichtet nacheinander kurz über eure Erfolge und das, was sie
+möglich gemacht hat (je 5 Minuten, Timer nutzen!).</li>
+</ol>
+<blockquote>
+<p>Für die anderen gilt:<br />
+Achtet darauf, welche Erfolgsfaktoren genannt werden, mache Dir Notizen
+dazu. (25 Min)</p>
+</blockquote>
+<ol start="3" type="1">
+<li>Wenn jeder an der Reihe war, schaut nochmal auf die jeweiligen
+Notizen:<br />
+Welche Erfolge und Erfolgsfaktoren wurden genannt? Gibt es
+Wiederholungen, Muster? Welche Stärken habt ihr bei euren Gefährt:innen
+wahrgenommen? Was wäre ohne die Gruppe anders gewesen? Gibt es etwas,
+wofür ihr dankbar seid? Was bedeutet das für die Zeit nach dieser
+Lernreise? Was nehmt ihr mit? Gibt es etwas, was ihr anderen noch
+mitgeben wollt? (10 Min)</li>
+</ol>
+<p><strong>Kata: Zukunftsmail <em>(5 Min)</em></strong></p>
+<p>Damit du deine guten Gedanken von eben nicht vergisst, verfasse über
+<a
+href="https://www.zukunftsmail.com/"><u>https://www.zukunftsmail.com/</u></a>
+eine E-Mail an dich selbst.<br />
+Sie wird dir dann z. B. in 6 Monaten zugestellt.<br />
+Woran möchtest dann erinnert werden? Was willst du erreicht haben? Wie
+wirst du das Thema Nachhaltigkeit weiter verfolgt haben?</p>
+<p>Schreib einfach drauf los!</p>
+<p><strong>Check-out <em>(5 Min)</em></strong></p>
+<p>Es ist Zeit, die Sektkorken knallen zu lassen!</p>
+<p>🍾 12 Wochen lernOS #Nachhaltigkeit sind geschafft!</p>
+<p>Herzlichen Glückwunsch!</p>
+<p>Wenn du und deine Mitstreiter:innen diese Lernreise in einem Wort
+zusammenfassen müsstet, welches wäre es?</p>
+<p>Und auch möglicherweise Zeit, Abschied zu nehmen. - Bittersüß, wie so
+oft. - Oder wollt ihr weitermachen? Wenn ihr als Gruppe weitermachen
+wollt: wie oft, wann und wie lange wollt ihr euch treffen? Oder wollt
+ihr ein Wiedersehen vereinbaren?</p>
+<p>Dein lernOs #Nachhaltigkeit Team sagt: Cheerio and stay (sustainably
+&amp; climately) positive! ;O)</p>
+<p><strong>Zitat der Woche</strong></p>
+<p>“The greatest threat to our planet is the belief that someone else
+will save it.”</p>
+<p>Robert Swan, britischer Historiker Polarforscher und Umweltschützer;
+erreichte als erster beide Pole zu Fuß</p>
+<h2 data-number="3.14" id="anhang-literaturliste"><span
+class="header-section-number">3.14</span> Anhang: Literaturliste</h2>
+<p>In der folgenden Auflistung findet Ihr eine unvollständige Übersicht
+zu Informationen, Hintergrundwissen, Communities &amp; Initiativen und
+Aktivitäten auf unterschiedlichen Ebenen.</p>
+<p><strong>Internationale und nationale Organisationen</strong></p>
+<table>
+<colgroup>
+<col style="width: 24%" />
+<col style="width: 75%" />
+</colgroup>
+<tbody>
+<tr>
+<td>Vereinte Nationen</td>
+<td><p>https://unric.org/de/un-aufgaben-ziele/nachhaltige-entwicklung/</p>
+<p>https://unric.org/de/17ziele/</p>
+<p>https://unric.org/de/superheld-des-klimaschutzes/</p>
+<p>https://go-goals.org/de/ (ein Spiel für Kinder)</p>
+<p>https://unis.unvienna.org/unis/campaigns/act-for-our-common-future.html</p></td>
+</tr>
+<tr>
+<td>Europäische Kommission:</td>
+<td><p>https://commission.europa.eu/strategy-and-policy/sustainable-development-goals/eu-whole-government-approach_de</p>
+<p>https://commission.europa.eu/strategy-and-policy/sustainable-development-goals_de</p>
+<p>https://knowsdgs.jrc.ec.europa.eu/</p>
+<p>https://knowsdgs.jrc.ec.europa.eu/enablingsdgs</p></td>
+</tr>
+<tr>
+<td>EU Sustainable Development Report</td>
+<td>https://dashboards.sdgindex.org/profiles</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Bundesregierung &amp; Ministerien</strong></p>
+<hr />
+<p>Deutsche
+https://www.bundesregierung.de/breg-de/themen/nachhaltigkeitspolitik/deutsche-nachhaltigkeitsstrategie-318846
+Nachhaltigkeitsstrategie</p>
+<p>Nachhaltigkeitspolitik
+https://www.bundesregierung.de/breg-de/themen/nachhaltigkeitspolitik</p>
+<p>Klimawandel Anpassung
+https://www.bundesregierung.de/breg-de/schwerpunkte/klimaschutz/anpassung-an-den-klimawandel</p>
+<p>BM für Umwelt
+https://www.bmuv.de/themen/nachhaltigkeit/ueberblick-nachhaltigkeit</p>
+<p>BM für Wirtschaft
+https://www.bmwk.de/Redaktion/DE/Dossier/nachhaltigkeit.html</p>
+<p>BM für wirtschaftliche https://www.bmz.de/de/agenda-2030
+Zusammenarbeit</p>
+<p>Umweltbundesamt https://uba.co2-rechner.de/de_DE/</p>
+<p>Gemeinschaftswerk https://gemeinschaftswerk-nachhaltigkeit.de/
+Nachhaltigkeit<br />
+————————– —————————————————————————————————————</p>
+<p><strong>Institutionen &amp; Organisationen (NGO)</strong></p>
+<hr />
+<p>Bertelsmann Stiftung https://regional-engagiert.de/</p>
+<p>Brot für die Welt
+https://www.fussabdruck.de/material/bildungsmaterial/</p>
+<p>BUND Jugend
+https://www.bund.net/ueber-uns/organisation/bundjugend/</p>
+<p>BUND Nachhaltigkeit
+https://www.bund.net/ueber-uns/nachhaltigkeit/konsum-im-alltag/</p>
+<p>Climaware https://www.climaware.org/</p>
+<p>Climateconnections https://climateconnections.de/</p>
+<p>Cradle2Cradle NGO https://c2c.ngo/wir-sind-c2c-ngo/</p>
+<p>CSR Nürnberg https://www.nuernberg.de/internet/csr_nuernberg/</p>
+<p>Germanwatch https://www.germanwatch.org/de/unsere-themen</p>
+<p>Greenpeace https://www.greenpeace.de/klimaschutz/klimakrise</p>
+<p>LAG 21 NRW
+https://www.lag21.de/portal-nachhaltigkeit/nachhaltige-entwicklung/</p>
+<p>Leaders for Climate Action https://lfca.ngo/de/</p>
+<p>SDGindex.org https://dashboards.sdgindex.org/rankings/spillovers</p>
+<p>Utopia
+https://utopia.de/ratgeber/klimafreundlich-leben-co2-sparen-effizient/
+—————————— ————————————————————————</p>
+<p><strong>Medien (Funk &amp; Fernsehen)</strong></p>
+<hr />
+<p>ARD Mediathek
+https://www.ardmediathek.de/sammlung/gesammeltes-wissen-nachhaltigkeit/4tlaMJ15NTtqkECkWfApTv</p>
+<p>Wir können auch anders
+https://www.ardmediathek.de/serie/wir-koennen-auch-anders/staffel-1/Y3JpZDovL3N3ci5kZS9zZGIvc3RJZC8xNTAy/1</p>
+<p>ZDF Nachhaltig leben
+https://www.zdf.de/doku-wissen/nachhaltig-leben-100.html</p>
+<p>Deutschlandfunk
+https://www.deutschlandfunk.de/suche?drsearch%3AsearchText=nachhaltigkeit
+—————————— ————————————————————————————————————</p>
+<p><strong>Podcasts &amp; Vorträge</strong></p>
+<hr />
+<p>Climaware https://www.climaware.org/#podcast Podcast</p>
+<p>Handelsblatt
+https://podcasts.apple.com/de/podcast/handelsblatt-green-energy-der-podcast-rund-um-nachhaltigkeit/id1558111002
+Green Energy</p>
+<p>Henkel Fritz for https://www.henkel.de/spotlight/fritz-for-future
+Future</p>
+<p>Klimafakten.de https://open.spotify.com/show/48BX9VwZPYM72nJuxfthy8
+Podcast</p>
+<p>Luisa Neubauer https://open.spotify.com/show/28sR8OiOq0MMnGEzMJTXSt
+Podcast</p>
+<p>Kate Raworth TED
+https://www.ted.com/talks/kate_raworth_a_healthy_economy_should_be_designed_to_thrive_not_grow?language=de
+Talk<br />
+—————- —————————————————————————————————————–</p>
+<p><strong>Apps</strong></p>
+<hr />
+<p>2zero – gemeinsam nachhaltig
+https://play.google.com/store/apps/details?id=com.twigbit.klimakompass&amp;gl=US</p>
+<p>World for climate https://www.worldforclimate.com/app/</p>
+<p>Inner development goals https://29k.org/ ———————————-
+——————————————————————————</p>
+<p><strong>Weiterführende Links</strong></p>
+<hr />
+<p>Fußabdruck https://www.fussabdruck.de/</p>
+<p>Handabdruck https://www.handabdruck.eu/was-ist-der-handabdruck</p>
+<p>Bundjugend https://www.bundjugend.de/mitmachen/</p>
+<p>Ökologischer Rucksack https://www.ressourcen-rechner.de/</p>
+<p>Working out Loud Climate https://www.workingoutloud.com/wol-climate
+———————————– —————————————————-</p>
+<h2 data-number="3.15" id="danksagungen"><span
+class="header-section-number">3.15</span> Danksagungen</h2>
+<p>Dieser Leitfaden ist über einen langen Zeitraum entstanden. An der
+Erstellung waren hauptsächlich beteiligt: Isabell Wellmann, Svenia
+Körner, Volker Schramm, Antje Holst, Ruth Habermehl und Claudia
+Strzelecki und auch Matthias Binder. .</p>
+<p>Wir haben Feedback erhalten von vielen Menschen, bei denen wir uns
+bedanken wollen und hatten eine wunderbare Pilotgruppe.</p>
+<p>Statt einen eigenen Canvas zu entwickeln, haben wir den Climate
+Action Canvas von <a
+href="http://www.climateconnections.de"><u>www.climateconnections.de</u></a>
+genutzt. Er steht zur freien Verfügung im Netz - danke dafür!</p>
+<section id="footnotes" class="footnotes footnotes-end-of-document"
+role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1"><p>“Our assessment clearly shows that tackling all these
+different challenges involves everyone – governments, the private
+sector, civil society – working together to prioritize risk reduction,
+as well as equity and justice, in decision-making and investment,” said
+IPCC Working Group II Co-Chair Debra Roberts,
+https://www.ipcc.ch/2022/02/28/pr-wgii-ar6/<a href="#fnref1"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Hagedorn, G., &amp; Peter, F. (2024, February 17).
+Efficacy Simulations: A pattern of inadequate environmental action.
+https://doi.org/10.31234/osf.io/h5734<a href="#fnref2"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>Klimafakten.de zitiert in Baunach “Hoch die Hände
+Klimawande”, Seite 135<a href="#fnref3" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p><a
+href="https://news.un.org/en/story/2023/07/1139037"><u>https://news.un.org/en/story/2023/07/1139037</u></a><a
+href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>„Climate of silence: Pluralistic ignorance as a barrier
+to climate change discussion”, Geiger, et al., 2016, Journal of
+Environmental Psychology, Link: https://</p>
+<p>www.sciencedirect.com/science/article/abs/pii/S027249441630038X &amp;
+https://</p>
+<p>www.klimafakten.de/meldung/warum-viele-menschen-lieber-nicht-ueber-denklimawandel-sprechen,
+Zugriff 26.04.2023<a href="#fnref5" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn6"><p>“Hoch die Hände, Klimawende”, Gabriel Baunauch, 1.
+Auflage, 2023<a href="#fnref6" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn7"><p>Webster, R. &amp; Marshall, G. (2019) The
+#TalkingClimate Handbook. How to</p>
+<p>have conversations about climate change in your daily life. Oxford:
+Climate</p>
+<p>Outreach, Link:
+https://climateoutreach.org/reports/how-to-have-a-climatechange-conversation-talking-climate/,
+Zugriff 26.04.2023<a href="#fnref7" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+</body>
+</html>
