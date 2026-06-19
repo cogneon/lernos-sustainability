@@ -174,7 +174,7 @@ Handabdruck zu legen!
 Wenn man als Einzelperson versuchen möchte, klimafreundliche
 Entscheidungen zu treffen, dann sind nicht alle gleichermaßen wirksam:
 
-![Schwierigkeitsgrad_Wirksamkeit_2025](./media/Schwierigkeitsgrad_Wirksamkeit_2025.png)
+![Schwierigkeitsgrad_Wirksamkeit_2025](./media/Schwierigkeitsgrad_Wirksamkeit_2025.jpg)
 Abbildung: T Brudermann & A Hoeben, Die Kunst der Ausrede (oekom Verlag), Schwierigkeitsgrad und Wirksamkeit klimafreundlicher Entscheidungen. CC-BY-ND
 
 
