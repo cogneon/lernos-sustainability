@@ -31,10 +31,11 @@ Das ist unsere Vision - das wollen wir umsetzen!
 - In den Wochen gibt es "Katas", das sind Aufgaben oder Übungen. lernOS
   benutzt das Wort Kata, in Anlehnung an den Kampfsport.
 
+Ihr könnt mit diesem Leitfaden arbeiten - es gibt auch ein [Miro Board](https://miro.com/app/board/uXjVLxxeDyU=/?share_link_id=436760039156), das hier euch kopieren könnt. Dafür braucht eine:r von euch eine Miro-Lizenz.
+
 lernOS Leitfäden stehen unter der Lizenz [Creative Commons Namensnennung
 4.0 International](https://creativecommons.org/licenses/by/4.0/deed.de)
 (CC BY 4.0), du darfst sie teilen und bearbeiten, wenn du die Quelle
 nennst und keine weiteren Einschränkungen hinzufügst.
 
-![](./media/image1.png){width="0.9166666666666666in"
-height="0.3229166666666667in"}
+![CC_BY_40](./media/CC_BY_40.png)

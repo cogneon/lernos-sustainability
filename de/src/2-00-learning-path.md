@@ -2,4 +2,5 @@
 
 Ein Überblick über den Lernpfad:
 
-![](./media/image14.png){width="5.594488188976378in" height="3.875in"}
+![](./media/Uberblick_Lernreise.jpeg)
+Abbildung: Svenia Körner/ Volker Schramm, CC-BY-4.0

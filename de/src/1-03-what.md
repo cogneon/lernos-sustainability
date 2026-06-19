@@ -57,6 +57,6 @@ Polarisierung und in deren Folge wachsende soziale Spannungen bergen."
 Es ist sicherzustellen, dass die reichsten 10% der Menschheit nicht mehr
 als 40% des Nationaleinkommens bekommen.
 
-\- Club Of Rome. Earth for All: Ein Survivalguide für unseren Planeten.
+Mehr Info: Club Of Rome. Earth for All: Ein Survivalguide für unseren Planeten.
 Der neue Bericht an den Club of Rome, 50 Jahre nach »Die Grenzen des
 Wachstums« (S.16). oekom verlag. Kindle-Version.

@@ -13,23 +13,11 @@ Veränderungen unterworfen, andererseits belegen weltweite Messungen,
 dass etwa seit Beginn der Industrialisierung (ca. 1850) der Mensch
 erheblich zur Erwärmung der Erdatmosphäre beiträgt. Das führt dazu, dass
 drastisch beschleunigte Klimaveränderungen erzeugt werden, wie du an der
-Grafik unten erkennen kannst.
+Grafik unten erkennen kannst. [Quelle](https://www.bpb.de/kurz-knapp/lexika/politiklexikon/296401/klimawandel/)
 
-(Quelle:
-[[https://www.bpb.de/kurz-knapp/lexika/politiklexikon/296401/klimawandel/]{.underline}](https://www.bpb.de/kurz-knapp/lexika/politiklexikon/296401/klimawandel/))
+![Jahrestemperaturen_in_Deutschland_1881-2019](./media/Jahrestemperaturen_in_Deutschland_1881-2019.png)
+Abbildung: wikimedia commons; Stefan Rahmstorf; 31 July 2020; Entwicklung der durchschnittlichen Jahrestemperaturen in Deutschland 1881-2019. Abweichung vom Mittelwert der ersten 30 Jahre. Nicht-lineare Trendlinie. CC-BY-SA 2.0
 
-Unter folgendem Link findest du das Thema auch noch in einer
-Multimedia-Darstellung sehr gut erklärt:
-[[https://ufz.pageflow.io/co2-budget#304846]{.underline}](https://ufz.pageflow.io/co2-budget#304846)
-
-![](./media/image2.png){width="5.594488188976378in"
-height="3.138888888888889in"} Abweichungen der Jahrestemperaturen für
-Deutschland 1881-2022 vom vieljährigen Temperaturmittel 1961-1990,
-Quelle: [[Deutscher Wetterdienst
-2023]{.underline}](https://www.dwd.de/DE/klimaumwelt/aktuelle_meldungen/230123/artikel_jahresrueckblick-2022.html)
-
-> Quelle: [[[Deutscher Wetterdienst (DWD)
-> 20]{.underline}]{.mark}](http://www.dwd.de/)24
 
 Die Grafik zeigt die Veränderung in der Durchschnittstemperatur in rund
 140 Jahren und damit ein wichtiges Merkmal des Klimawandels. Die
@@ -40,8 +28,9 @@ Brennstoffen und die Abholzung von Wäldern entstehen. Ihr Anstieg in der
 Atmosphäre verstärkt den Treibhauseffekt und führt zur globalen
 Erwärmung.
 
-![](./media/image3.png){width="6.267716535433071in"
-height="5.916666666666667in"}
+Unter folgendem Link findest du das Thema auch noch in einer
+[Multimedia-Darstellung](https://ufz.pageflow.io/co2-budget#304846) sehr gut erklärt.
+
 
 Die größten Treibhausgasemittenten in Deutschland sind die
 Energiewirtschaft, der Verkehrssektor und die Industrie. Im Jahr 2022
@@ -53,8 +42,6 @@ Industrie, insbesondere die Chemieindustrie und die Produktion
 mineralischer Produkte wie Zement, trägt ebenfalls erheblich zu den
 Treibhausgasemissionen bei.
 
-:![](./media/image4.png){width="4.665313867016623in"
-height="3.5011570428696412in"}
 
 **Klimaschutz**
 
@@ -66,28 +53,17 @@ Weil sowohl das Klima als auch die Wirtschaft sehr komplex und von einer
 Vielzahl von Faktoren beeinflusst werden, ist auch Klimaschutz
 vielfältig und komplex. Nehmen wir den Verkehrssektor als Beispiel: Es
 werden ordnungsrechtliche (Verkehrsrecht), ökonomische
-(Subventionen/CO~²~-Preis) und infrastrukturelle (Bahn und OPNV)
-Instrumente genutzt. Die folgende Grafik zeigt dafür Rahmenbedingungen
-und Bausteine am Beispiel des Verkehrssektors:
+(Subventionen/CO²-Preis) und infrastrukturelle (Bahn und OPNV)
+Instrumente genutzt. 
 
-[![](./media/image5.png){width="5.594488188976378in"
-height="3.0694444444444446in"}](https://www.umweltbundesamt.de/themen/verkehr/klimaschutz-im-verkehr#bausteine)
-
-[[https://www.umweltbundesamt.de/themen/verkehr/klimaschutz-im-verkehr#bausteine]{.underline}](https://www.umweltbundesamt.de/themen/verkehr/klimaschutz-im-verkehr#bausteine)
 
 **Klimaanpassung**
 
 Heute ist leider schon klar: Wir können bestimmte Folgen des
 Klimawandels, wie z.B. die Zunahme von Extremwetterereignissen, mit
 Klimaschutzmaßnahmen nicht mehr verhindern. Die Hände jetzt in den Schoß
-zu legen, ist aber auch nicht die Lösung. Die nachfolgende Grafik zeigt
-Maßnahmen, um die heute schon unvermeidbaren Folgen des Klimawandels zu
-bewältigen, also **Klimaanpassung!**
+zu legen, ist aber auch nicht die Lösung. Mehr Info für Deutschland [hier](https://www.bundesumweltministerium.de/themen/klimaanpassung/die-deutsche-anpassungsstrategie-an-den-klimawandel)
 
-![](./media/image6.jpg){width="6.942708880139983in"
-height="3.4933245844269467in"}
-
-[[https://www.bmuv.de/themen/klimaschutz-anpassung/klimaanpassung/worum-geht-es]{.underline}](https://www.bmuv.de/themen/klimaschutz-anpassung/klimaanpassung/worum-geht-es)
 
 Zusammengefasst:
 
@@ -110,9 +86,8 @@ Generationen zu gefährden, ihre eigenen Bedürfnisse zu befriedigen."
 
 Dieses Verständnis von Nachhaltigkeit wurde 1987 im Bericht der
 Weltkommission für Umwelt und Entwicklung der Vereinten Nationen
-veröffentlicht. (Brundtland-Bericht)
+veröffentlicht. [Brundtland-Bericht](https://www.lag21.de/portal-nachhaltigkeit/nachhaltige-entwicklung/)
 
-> [[https://www.lag21.de/portal-nachhaltigkeit/nachhaltige-entwicklung/]{.underline}](https://www.lag21.de/portal-nachhaltigkeit/nachhaltige-entwicklung/)
 
 "Nachhaltigkeit" und "Nachhaltige Entwicklung" haben die gleiche
 Bedeutung und beziehen sich auf ökologische Tragfähigkeit, soziale

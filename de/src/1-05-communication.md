@@ -4,18 +4,18 @@
 
 Gute Klimakommunikation kann:
 
-- Die "Klima-Schweigespirale" durchbrechen[^5] - Die tatsächlichen
+- Die "Klima-Schweigespirale" durchbrechen - Die tatsächlichen
   Mehrheitsverhältnisse in der sozialen Gruppe oder Gesellschaft sind
   nicht ausschlaggebend dafür, ob man eher spricht oder schweigt,
   sondern die subjektiv wahrgenommenen. Da beim Klimathema jedoch
   oftmals lautstarke und selbstbewusst auftretende Randgruppen die
   Debatte dominieren und sich die "schweigende" Mehrheit zu wenig
   darüber austauscht, werden die tatsächlichen herrschenden
-  Meinungsverhältnisse oft verschleiert.[^6]
+  Meinungsverhältnisse oft verschleiert. [Quelle](https://halloklima.at/die-stille-mehrheit-fur-den-klimaschutz-und-warum-wir-sie-endlich-horbar-machen-sollten/)
 
 - Verbindungen zu anderen Menschen, Gruppen, Organisationen schaffen
 
-- Dringlichkeit zum Handeln verdeutlichen (TEST TEST WEG MACHEN)
+- Dringlichkeit zum Handeln verdeutlichen
 
 - Bewusstsein für lokale Auswirkungen öffnen
 
@@ -66,26 +66,26 @@ Gegenübers. Dazu gehört
 - Vorschlag einer Lösung, wie "wir" besser in Einklang mit aktuell
   unbefriedigten Bedürfnissen sein können.
 
-Quelle: Center for Applied European Studies (CAES). \_(K)eine Rückkehr
-zum Normalzustand? - Prof. Dr. Hartmut Rosa u. Dr. Gerald Hüther \_,
-2021.
-\[[[https://www.youtube.com/watch?v=wTY9zTjnLQ8\](https://www.youtube.com/watch?v=wTY9zTjnLQ8)]{.underline}](https://www.youtube.com/watch?v=wTY9zTjnLQ8%5D(https://www.youtube.com/watch?v=wTY9zTjnLQ8)).
+[Quelle: Center for Applied European Studies (CAES) (K)eine Rückkehr
+zum Normalzustand? - Prof. Dr. Hartmut Rosa u. Dr. Gerald Hüther, 2021.](https://www.youtube.com/watch?v=wTY9zTjnLQ8)
+
 
 **Besser übers Klima reden: 10 wissenschaftlich belegte Regeln**
 
-[[https://www.kea-bw.de/fileadmin/user_upload/Publikationen/11_Klimakommunikation_4-Seiter_Besser_u\_\_bers_Klima_reden.pdf]{.underline}](https://www.kea-bw.de/fileadmin/user_upload/Publikationen/11_Klimakommunikation_4-Seiter_Besser_u__bers_Klima_reden.pdf)
+Link [hier](https://www.kea-bw.de/fileadmin/user_upload/Publikationen/11_Klimakommunikation_4-Seiter_Besser_u__bers_Klima_reden.pdf)
+
 
 **Do's**
 
 - Faire/ gewaltfreie/ empathische Kommunikation
 
-- respektiere die Werte deiner Gesprächspartner:innen
+- Respektiere die Werte deiner Gesprächspartner:innen
 
 - Höre gut zu und stelle Fragen
 
 - Gemeinsame Nenner als Ausgangsbasis nehmen (Werte, Sorgen, ...)
 
-- auf konkrete und regionale Gesprächsinhalte achten
+- Auf konkrete und regionale Gesprächsinhalte achten
 
 - Geschichten über Menschen oder die eigene Geschichte erzählen
 
@@ -102,24 +102,25 @@ zum Normalzustand? - Prof. Dr. Hartmut Rosa u. Dr. Gerald Hüther \_,
 - Über das Stoppen der Verschmutzung oder Zerstörung sprechen, z.B. ich
   kämpfe gegen die Zerstörung der menschlichen Lebensgrundlagen
 
-- sprich über die Dringlichkeit der Veränderung und begründe das mit
+- Sprich über die Dringlichkeit der Veränderung und begründe das mit
   aktuellen Beobachtungen oder wissenschaftlich belegten Fakten, z.B.
-  aus der Tagesschau
-  ([[https://www.tagesschau.de/wissen/klima/klimaerwaermung-europa-100.html]{.underline}](https://www.tagesschau.de/wissen/klima/klimaerwaermung-europa-100.html))
+  aus der [Tagesschau](https://www.tagesschau.de/wissen/klima/klimaerwaermung-europa-100.html)
 
 - Infos, Quellen, Events teilen und/ oder kuratieren
 
 - Üben, dass gute Klimakommunikation gelingt
 
+
 **Dont's**
 
-- aggressiv oder abwertend gegenüber Zuhörenden sein
+- Aggressiv oder abwertend gegenüber Zuhörenden sein
 
-- perfektionistisch sein, das Unzureichende betonen
+- Perfektionistisch sein, das Unzureichende betonen
 
 - Nichts zu sagen aus Angst, es könnte falsch oder nicht perfekt sein
 
 - Vorwürfe machen
+
 
 **Möglichkeiten für Gespräche über die Klimakatastrophe**
 
@@ -127,7 +128,7 @@ Du kannst das Thema in einer geeigneten Situation ansprechen. Oder du
 kannst die Wahrscheinlichkeit erhöhen, dass andere das Thema ansprechen,
 indem du z.B. selbst etwas Sichtbares zum Klimaschutz beiträgst.
 
-> "Tue Gutes und lass dich darauf ansprechen." [^7]
+> "Tue Gutes und lass dich darauf ansprechen."
 
 **Gelegenheiten für spontane Konversationen für eine
 Klimakommunikation:**
