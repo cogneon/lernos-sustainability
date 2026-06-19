@@ -77,22 +77,39 @@ Europäische Kommission:
 Dieser Leitfaden ist über einen langen Zeitraum entstanden. An der Erstellung waren hauptsächlich beteiligt: Isabell Wellmann, Svenia Körner, Volker Schramm, Antje Holst, Ruth Habermehl und Claudia Strzelecki und auch Matthias Binder.
 
 Wir haben Feedback und Hilfe erhalten von vielen Menschen, bei denen wir uns bedanken wollen:
+
 Daniel Bartel
+
 Gabriel Baunach
+
 Anke Deyda
+
 Simon Dückert
+
 Felix Emele
+
 Moritz Emele
+
 Caro Frank
+
 Caroline Göbel
+
 Claudia Heitmann
+
 Andrea Klepsch
+
 Katja Köngigstein
+
 Roland Mainka
+
 Johanna Papst
+
 Sabrina Schmitz
+
 Heike Schneeweiss
+
 Lene Wellmann
+
 Markus Wellmann
 
 
