@@ -179,4 +179,6 @@ achten. Besser Fragen stellen, z.B. zu Werten, als sich selbst durch
 Aussagen durchsetzen zu wollen. Achte auf den gemeinsamen Nenner, die
 Basis eures Verständnisses. Falls Meinungsverschiedenheiten nach
 mehreren Gesprächsversuchen zu groß sind, das Thema lieber vermeiden und
-nach längerer Zeit einen neuen Versuch wagen.
+nach längerer Zeit einen neuen Versuch wagen. 
+
+Hier ist ein empfehlenswerter Artikel zu zum Thema [mit Kindern über die Klimakrise reden](https://psy4f.org/wp-content/uploads/2023/08/Mit-Kindern-ueber-die-Klimakrise-reden.pdf).
