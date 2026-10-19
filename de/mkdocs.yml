@@ -1,5 +1,5 @@
 site_name: lernOS Nachhaltigkeit Leitfaden
-site_url: https://cogneon.github.io/
+site_url: https://sustainability.lernos.org/de/
 docs_dir: src
 site_dir: ../docs/de
 
@@ -29,11 +29,10 @@ nav:
       - Kata 12 - Meine Vision - Abschluss und Ausblick: 2-13-kata-12.md
     - Anhang: 3-00-appendix.md
     - Download:
-      - PDF-Version: https://github.com/cogneon/lernos-template/blob/master/de/build/lernos-template-guide.pdf
-      - Word-Version: https://github.com/cogneon/lernos-template/blob/master/de/build/lernos-template-guide.docx
-      - HTML-Version: https://github.com/cogneon/lernos-template/blob/master/de/build/lernos-template-guide.html
-      - E-Book (epub): https://github.com/cogneon/lernos-template/blob/master/de/build/lernos-template-guide.epub
-      - E-Book (mobi): https://github.com/cogneon/lernos-template/blob/master/de/build/lernos-template-guide.mobi
+      - PDF-Version: https://sustainability.lernos.org/de/download/lernos-sustainability-guide.pdf
+      - Word-Version: https://sustainability.lernos.org/de/download/lernos-sustainability-guide.docx
+      - HTML-Version: https://sustainability.lernos.org/de/download/lernos-sustainability-guide.html
+      - E-Book (epub): https://sustainability.lernos.org/de/download/lernos-sustainability-guide.epub
     - Links:
       - lernos.org: https://lernos.org
       - CONNECT Community: https://community.cogneon.de

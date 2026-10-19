@@ -35,7 +35,6 @@ jobs:
       - run: mkdocs build -f ./de/mkdocs.yml        
     
       # Create Microsoft Word Version (docx)
-      - run: mkdir ./docs/de/download
       - uses: docker://pandoc/core
         with:
           args: >-
@@ -45,7 +44,7 @@ jobs:
             --number-sections
             --toc
             -V lang=de-de
-            --output=./docs/de/download/${{ github.event.repository.name }}-guide.docx
+            --output=./de/build/${{ github.event.repository.name }}-guide.docx
             ./de/src/index.md ${{ steps.chapter_list.outputs.chapters }}
 
       # Create HTML Version (html)
@@ -75,18 +74,24 @@ jobs:
             ./de/src/index.md ${{ steps.chapter_list.outputs.chapters }}
 
       # Create PDF Version (pdf)
-      #- uses: docker://pandoc/extra
-      #  with:
-      #    args: >-
-      #      ./de/metadata.yaml
-      #      --standalone
-      #      --resource-path=./de/src
-      #      --number-sections
-      #      --toc
-      #      -V lang=de-de
-      #      --template /.pandoc/templates/eisvogel.latex
-      #      --output=./de/build/${{ github.event.repository.name }}-guide.pdf
-      #      ./de/src/index.md ${{ steps.chapter_list.outputs.chapters }}
+      - uses: docker://pandoc/extra
+        with:
+          args: >-
+            ./de/metadata.yaml
+            --standalone
+            --resource-path=./de/src
+            --number-sections
+            --toc
+            -V lang=de-de
+            --pdf-engine=xelatex
+            --template /.pandoc/templates/eisvogel.latex
+            --output=./de/build/${{ github.event.repository.name }}-guide.pdf
+            ./de/src/index.md ${{ steps.chapter_list.outputs.chapters }}
+
+      # Downloads zusätzlich über die Website bereitstellen (sustainability.lernos.org/de/download/)
+      - run: |
+          mkdir -p ./docs/de/download
+          cp ./de/build/${{ github.event.repository.name }}-guide.{docx,pdf,html,epub} ./docs/de/download/
 
       # Geänderte Datein zurück ins Repository committen
       - uses: stefanzweifel/git-auto-commit-action@v4
