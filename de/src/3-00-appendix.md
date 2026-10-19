@@ -1,4 +1,5 @@
-## Anhang: Literaturliste
+# Anhang
+## Literaturliste
 
 **Internationale und nationale Organisationen**
 
